@@ -1,0 +1,1 @@
+dotnet test .\JC.Unit\JC.Unit.dll
