@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="a1e3f61a-0467-4263-b1b7-343a5951b00d" name="TerezaČerná@LAPTOP-OBK5BVVT 2020-10-28 15:02:41" runUser="AzureAD\TerezaČerná" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2020-10-28T15:02:41.3511296+01:00" queuing="2020-10-28T15:02:41.3511316+01:00" start="2020-10-28T15:02:38.0492632+01:00" finish="2020-10-28T15:02:44.5596672+01:00" />
+  <TestSettings name="default" id="f98b627c-6928-44f4-aad3-85c13ed5348f">
+    <Deployment runDeploymentRoot="TerezaČerná_LAPTOP-OBK5BVVT_2020-10-28_15_02_41" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="26255f70-2462-488c-914f-ad6a9fa81f52" testId="6f97390d-f333-7779-747b-5eb57b7fd1d8" testName="[Integration_StagingxDim&amp;Fact].[30].[IT - Staging table is a subset of a dimension].[StagingMoney.Ucetnictvi_InterniDoklad]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.2095210" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26255f70-2462-488c-914f-ad6a9fa81f52">
+      <Output>
+        <ErrorInfo>
+          <Message>There is at least one row, but no rows were expected:&#xD;
+&#xD;
+┌───────────────────────────┬──────────────┬───────────────────────────┐&#xD;
+│ID                         │CisloDokladu  │Nazev                      │&#xD;
+╞═══════════════════════════╪══════════════╪═══════════════════════════╡&#xD;
+│6ee4c247-5eb7-4ca6-9ae...  │ID00003       │zařazení majetku - not...  │&#xD;
+└───────────────────────────┴──────────────┴───────────────────────────┘&#xD;
+&#xD;
+&#xD;
+Test description: Dim.Document&#xD;
+TestQuerySource: BigBang&#xD;
+TestQuery:&#xD;
+&#xD;
+    select ID, CisloDokladu, Nazev from StagingMoney.Ucetnictvi_InterniDoklad&#xD;
+    except&#xD;
+&#xD;
+ SELECT [Document Money Src ID]&#xD;
+      ,[Document Number]&#xD;
+      ,[Document Description]&#xD;
+  FROM [Dim].[Document]&#xD;
+&#xD;
+</Message>
+          <StackTrace>   at JC.Unit.TestExecution.nUnitRunner.RunAllTests(TestDefinition testDefinition) in D:\a\1\s\MainCore\JC.Unit\JC.Unit\TestExecution\nUnitRunner.cs:line 59&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e19747fd-689c-4dbb-b45e-1dac333bcbb1" testId="1ec31cfd-6123-0cfe-6ab3-63b40dd1212b" testName="[Smoke_ObjectExistence].[23].[Existence of the table].[Table Ciselniky_Cinnost]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0867230" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e19747fd-689c-4dbb-b45e-1dac333bcbb1" />
+    <UnitTestResult executionId="6449fde6-801b-4458-ac1a-debb6445e8a2" testId="a9475b93-443b-d87f-a61f-8a41fc7ac6f1" testName="[Smoke_ObjectExistence].[11].[Existence of the table].[Table Ucetnictvi_ZavazkovyDoklad]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0754330" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6449fde6-801b-4458-ac1a-debb6445e8a2" />
+    <UnitTestResult executionId="4001ea28-879b-43d7-a3d2-dfe23d02cd41" testId="2399483b-6614-c431-9362-847b6c1e4592" testName="[Integration_StagingxDim&amp;Fact].[18].[IT - Sum check by Document Type].[Table [Fakturace_ZalohovaFakturaPrijata]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0819970" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4001ea28-879b-43d7-a3d2-dfe23d02cd41" />
+    <UnitTestResult executionId="798f09f7-9626-4db0-a7be-2a28a99cd544" testId="6febc6cd-4565-b196-9913-89791c7f65ab" testName="[Smoke_ObjectExistence].[8].[Existence of the table].[Table Ucetnictvi_InterniDoklad]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0752730" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="798f09f7-9626-4db0-a7be-2a28a99cd544" />
+    <UnitTestResult executionId="893a113f-81bd-46e0-9f86-2b99f2b84fa0" testId="16df9282-30d4-321f-d81a-c69931a0cf80" testName="[Integration_StagingxDim&amp;Fact].[37].[ST - Document Payment Status].[Document Payment Status - Castecne Zaplaceno]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0393510" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="893a113f-81bd-46e0-9f86-2b99f2b84fa0" />
+    <UnitTestResult executionId="282faa36-c193-4d04-a106-9736d873ca15" testId="20f5e4c2-74a8-19b6-8770-cfb85b838a3e" testName="[Integration_StagingxDim&amp;Fact].[39].[ST - Document Payment Status].[Document Payment Status - Zaplaceno]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0365360" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="282faa36-c193-4d04-a106-9736d873ca15" />
+    <UnitTestResult executionId="d5bd0ffb-0d67-4fa1-91dc-3ae45c5eaf99" testId="50fafed6-ad95-43c4-24f8-d614d5c94d96" testName="[Smoke_ObjectExistence].[30].[Existence of the table].[Table Ucetnictvi_PohledavkovyDoklad]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0738470" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5bd0ffb-0d67-4fa1-91dc-3ae45c5eaf99" />
+    <UnitTestResult executionId="409678b2-b528-43b9-a2b7-aea47e64acd7" testId="5279a498-3e54-6a76-5668-7936e4fcdb2e" testName="[Integration_StagingxDim&amp;Fact].[4].[ST - Sum of Amount with VAT CZK].[Table [Fact].[Document Item]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.2155470" startTime="2020-10-28T15:02:40.0000000+01:00" endTime="2020-10-28T15:02:40.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="409678b2-b528-43b9-a2b7-aea47e64acd7" />
+    <UnitTestResult executionId="05df8d1f-5422-4cb3-8ab4-7f0cc591e364" testId="864b6706-d1c5-e661-a612-b3725dce8068" testName="[Smoke_ObjectExistence].[14].[Existence of the table].[Table CSW_BI_Pohledavky2]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0712060" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05df8d1f-5422-4cb3-8ab4-7f0cc591e364" />
+    <UnitTestResult executionId="31c99708-4102-48b1-a8c5-c94987bdc012" testId="8f902760-590d-6675-0ade-d6de7c771a6b" testName="[Smoke_ObjectExistence].[5].[Existence of the table].[Table Finance_BankovniVypis]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0706560" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31c99708-4102-48b1-a8c5-c94987bdc012" />
+    <UnitTestResult executionId="dbf90894-4fb1-4d87-b1dc-01f6d78b4201" testId="4d3a32a4-4609-a802-8e5d-72092fb3527d" testName="[Smoke_ObjectExistence].[48].[Existence of the table].[Table Account]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0816149" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbf90894-4fb1-4d87-b1dc-01f6d78b4201" />
+    <UnitTestResult executionId="97fcda14-42ff-4026-a8c6-c8bd4eaca9d5" testId="87b6bec7-37b1-b032-698d-279ffdadc596" testName="[Smoke_ObjectExistence].[3].[Existence of the table].[Table Fakturace_ZalohovaFakturaVydana]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.3284630" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97fcda14-42ff-4026-a8c6-c8bd4eaca9d5" />
+    <UnitTestResult executionId="7ddaa018-a650-45cf-8092-6ace8f44cb9c" testId="18acec2e-1e7a-3778-00b9-41543d6289fe" testName="[Smoke_ObjectExistence].[31].[Existence of the table].[Table Objednavky_PolozkaObjednavkyPrijate]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0836980" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7ddaa018-a650-45cf-8092-6ace8f44cb9c" />
+    <UnitTestResult executionId="feb5ebbc-737f-41a0-ae24-9b86b6f2b2cd" testId="4fe7149d-95b6-137a-5c7f-e332393585ef" testName="[Smoke_ObjectExistence].[44].[Existence of the table].[Table Mzdy_DruhNepritomnosti]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0785690" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="feb5ebbc-737f-41a0-ae24-9b86b6f2b2cd" />
+    <UnitTestResult executionId="f572db12-fe52-4891-a15f-92ed969a1463" testId="039a3cff-3840-8952-60c2-35593d0e1c99" testName="[Smoke_ObjectExistence].[45].[Existence of the table].[Table Customer Contract]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0720170" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f572db12-fe52-4891-a15f-92ed969a1463" />
+    <UnitTestResult executionId="21d41544-75e9-484d-9498-42b3f16354fc" testId="0dce3cbb-c5be-8ce9-26c7-823b70f36b4e" testName="[Smoke_ObjectExistence].[6].[Existence of the table].[Table Finance_PrikazKUhrade]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0948200" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21d41544-75e9-484d-9498-42b3f16354fc" />
+    <UnitTestResult executionId="47f8ad9e-4d1e-484f-8bc7-6dbd84f5422a" testId="6f12a022-e888-a020-9538-58aae455a3ed" testName="[Smoke_ObjectExistence].[38].[Existence of the table].[Table Personalistika_ZamestnanecDoplnujiciUdaje]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0865290" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47f8ad9e-4d1e-484f-8bc7-6dbd84f5422a" />
+    <UnitTestResult executionId="1674294c-a0fc-4059-8123-3070576cd2f8" testId="4d4f2eb1-4b6a-f2f9-5631-fba458167b0b" testName="[Integration_StagingxDim&amp;Fact].[40].[ST - Document Payment Status].[Document Payment Status - N/A for Storno]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0370640" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1674294c-a0fc-4059-8123-3070576cd2f8" />
+    <UnitTestResult executionId="9ae226e6-f856-4c34-9aa2-d523c524f7d3" testId="5362ad2c-828a-7aad-1d15-a999fe6c67ac" testName="[Integration_StagingxDim&amp;Fact].[34].[IT - Staging table is a subset of a dimension].[StagingMoney.Finance_PrikazKUhrade]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0458940" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ae226e6-f856-4c34-9aa2-d523c524f7d3">
+      <Output>
+        <ErrorInfo>
+          <Message>There is at least one row, but no rows were expected:&#xD;
+&#xD;
+┌───────────────────────────┬──────────────┬──────────────┐&#xD;
+│ID                         │CisloDokladu  │Nazev         │&#xD;
+╞═══════════════════════════╪══════════════╪══════════════╡&#xD;
+│7a724f8d-c58a-4e79-9f1...  │PU00011       │Mzdy 07/2019  │&#xD;
+└───────────────────────────┴──────────────┴──────────────┘&#xD;
+&#xD;
+&#xD;
+Test description: Dim.Document&#xD;
+TestQuerySource: BigBang&#xD;
+TestQuery:&#xD;
+&#xD;
+    select ID, CisloDokladu, Nazev from StagingMoney.Finance_PrikazKUhrade&#xD;
+    except&#xD;
+&#xD;
+ SELECT [Document Money Src ID]&#xD;
+      ,[Document Number]&#xD;
+      ,[Document Description]&#xD;
+  FROM [Dim].[Document]&#xD;
+&#xD;
+</Message>
+          <StackTrace>   at JC.Unit.TestExecution.nUnitRunner.RunAllTests(TestDefinition testDefinition) in D:\a\1\s\MainCore\JC.Unit\JC.Unit\TestExecution\nUnitRunner.cs:line 59&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="89a12ad1-dcc0-41e3-aa28-b6e1feca908b" testId="08967945-3295-54c1-32d2-2e73fefe3a5f" testName="[Integration_StagingxDim&amp;Fact].[13].[IT - Sum check by Document Type].[Table [Fakturace_FakturaPrijata]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.4087410" startTime="2020-10-28T15:02:41.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89a12ad1-dcc0-41e3-aa28-b6e1feca908b" />
+    <UnitTestResult executionId="c2398fa2-33d1-4a61-b3c9-27395dc2bd6c" testId="26ba587d-8d14-5c80-c5e1-65757217c08c" testName="[Smoke_ObjectExistence].[41].[Existence of the table].[Table Mzdy_NepritomnostNahrada]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0714650" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2398fa2-33d1-4a61-b3c9-27395dc2bd6c" />
+    <UnitTestResult executionId="a136e330-f9ce-4993-8249-a3685b1ec703" testId="c6060242-f5fb-cdf7-fa1d-63bf1a7089d9" testName="[Integration_StagingxDim&amp;Fact].[12].[IT - Sum check by Document Type].[Table [Finance_BankovniVypis]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.6396230" startTime="2020-10-28T15:02:41.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a136e330-f9ce-4993-8249-a3685b1ec703" />
+    <UnitTestResult executionId="3c7a32a8-21da-41cb-a2ca-fb10bc906a59" testId="b94a13f1-e0d2-a3a1-0150-4599409d2aff" testName="[Smoke_ObjectExistence].[58].[Existence of the table].[Table Contract Fees]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0817259" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c7a32a8-21da-41cb-a2ca-fb10bc906a59" />
+    <UnitTestResult executionId="fdf1b9d7-d77d-4467-91e1-5909778c0192" testId="52a5227e-4b35-a770-eb37-5df487124947" testName="[Integration_StagingxDim&amp;Fact].[2].[ST - Accounting logic].[Journal x Account Balance check]" computerName="LAPTOP-OBK5BVVT" duration="00:00:01.6479940" startTime="2020-10-28T15:02:39.0000000+01:00" endTime="2020-10-28T15:02:41.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fdf1b9d7-d77d-4467-91e1-5909778c0192" />
+    <UnitTestResult executionId="b8b906cf-84ab-4998-acb9-7dc83fff811d" testId="e5564b1f-76b7-9dd4-7b65-c1c566b78c48" testName="[Integration_StagingxDim&amp;Fact].[22].[IT - Staging table is a subset of a dimension].[StagingMoney.Ciselniky_Cinnost]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1855270" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8b906cf-84ab-4998-acb9-7dc83fff811d" />
+    <UnitTestResult executionId="9f7475c0-a828-40bb-a16b-048f0215385f" testId="ee7b3397-05b3-5660-5f81-c9db969c5159" testName="[Smoke_ObjectExistence].[35].[Existence of the table].[Table Contract Rates]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0716670" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f7475c0-a828-40bb-a16b-048f0215385f" />
+    <UnitTestResult executionId="028e8bd5-2ce0-4970-834e-d6bb2d378dec" testId="bbe514a8-b32c-84ea-2fe8-555567b7c1aa" testName="[Smoke_ObjectExistence].[26].[Existence of the table].[Table Fakturace_PolozkaFakturyPrijate]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0789400" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="028e8bd5-2ce0-4970-834e-d6bb2d378dec" />
+    <UnitTestResult executionId="36f9d56a-bcd5-4de1-b97c-ecfb2ce79b4f" testId="1cb03d79-ff9b-500d-7915-ae447d9bbf71" testName="[Smoke_ObjectExistence].[18].[Existence of the table].[Table Ciselniky_Stat]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0801960" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36f9d56a-bcd5-4de1-b97c-ecfb2ce79b4f" />
+    <UnitTestResult executionId="c1e37a84-954c-4b65-ba35-980022f16183" testId="378cf331-36e7-aa16-9514-df1f6a19a35c" testName="[Integration_MoneyxStaging].[5].[ST - No empty tables - StagingMoney].[No empty tables]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.5712800" startTime="2020-10-28T15:02:39.0000000+01:00" endTime="2020-10-28T15:02:40.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1e37a84-954c-4b65-ba35-980022f16183" />
+    <UnitTestResult executionId="58b864db-f1c6-49f7-b5fd-ec09218a1632" testId="30e9c341-1c1c-069d-a089-d4302828d75b" testName="[Integration_StagingxDim&amp;Fact].[25].[IT - Staging table is a subset of a dimension].[StagingMoney.Ciselniky_Stredisko]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1709700" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58b864db-f1c6-49f7-b5fd-ec09218a1632" />
+    <UnitTestResult executionId="a2cc0265-026e-43bf-8f7f-8990595b8459" testId="ea30e6cb-f14a-8ba2-3bc0-4a8461781beb" testName="[Smoke_ObjectExistence].[39].[Existence of the table].[Table Mzdy_Svatky]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0794870" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2cc0265-026e-43bf-8f7f-8990595b8459" />
+    <UnitTestResult executionId="1b445a19-f59f-45f3-82db-7f8bcd511877" testId="16476183-8a99-9d57-9a05-ab6dceed5fad" testName="[Smoke_ObjectExistence].[9].[Existence of the table].[Table Fakturace_ZalohovaFakturaPrijata]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0795490" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b445a19-f59f-45f3-82db-7f8bcd511877" />
+    <UnitTestResult executionId="356bb31a-0d72-4391-8e30-32b047d4626a" testId="2e3c31ea-d47c-7e26-f2f4-ddf1fa7d180e" testName="[Smoke_ObjectExistence].[20].[Existence of the table].[Table Ciselniky_Stredisko]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0862359" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="356bb31a-0d72-4391-8e30-32b047d4626a" />
+    <UnitTestResult executionId="062a8bf2-b7f7-42f7-993c-ef32b88df231" testId="7c2f79ab-8644-1b76-edfc-d1d7cfd5cae2" testName="[Smoke_ObjectExistence].[29].[Existence of the table].[Table Adresar_Firma]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0874480" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="062a8bf2-b7f7-42f7-993c-ef32b88df231" />
+    <UnitTestResult executionId="ae1ffc8a-5023-438c-9a21-ecb721e6da21" testId="271c685b-4f27-d869-82ad-0a11c3050d03" testName="[Integration_StagingxDim&amp;Fact].[24].[IT - Staging table is a subset of a dimension].[StagingMoney.Meny_Mena]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1887520" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae1ffc8a-5023-438c-9a21-ecb721e6da21" />
+    <UnitTestResult executionId="452bcb15-87e1-4fd1-91b8-ef3ba812853d" testId="59c40813-1907-f75a-f050-dbaa9195f6db" testName="[Integration_StagingxDim&amp;Fact].[26].[IT - Staging table is a subset of a dimension].[StagingMoney.Ucetnictvi_ZavazkovyDoklad]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1820370" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="452bcb15-87e1-4fd1-91b8-ef3ba812853d" />
+    <UnitTestResult executionId="a623e36b-dbbd-4295-8fa8-576dd95e9ad4" testId="93a45ca3-7b48-9e02-d63a-86d7e8b5547f" testName="[Smoke_ObjectExistence].[7].[Existence of the table].[Table Ucetnictvi_StavUctu]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0862860" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a623e36b-dbbd-4295-8fa8-576dd95e9ad4" />
+    <UnitTestResult executionId="036517bb-c171-4976-8285-752629ffe564" testId="16d5e31b-ede9-d3bc-1f7a-c861155e9c35" testName="[Smoke_ObjectExistence].[46].[Existence of the table].[Table Person]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0742460" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="036517bb-c171-4976-8285-752629ffe564" />
+    <UnitTestResult executionId="07cb0eaa-f2cb-4121-b5a2-d412a8bc66ac" testId="a8dfca29-b254-c754-1cae-f37950e06b2d" testName="[Smoke_ObjectExistence].[2].[Existence of the table].[Table Finance_PolozkaPokladnihoDokladu]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0810930" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07cb0eaa-f2cb-4121-b5a2-d412a8bc66ac" />
+    <UnitTestResult executionId="2e7f50dd-f672-45da-be29-017cfa97e8e9" testId="213ee05a-4a01-4b18-17cf-daa5bcd1646d" testName="[Smoke_ObjectExistence].[27].[Existence of the table].[Table Ciselniky_Zakazka]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0854700" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e7f50dd-f672-45da-be29-017cfa97e8e9" />
+    <UnitTestResult executionId="0f31fc3a-8664-443c-93d4-5a0369d8d868" testId="d4f48ae9-e7e3-a446-ad84-9aae9cef5d7c" testName="[Smoke_ObjectExistence].[4].[Existence of the table].[Table Finance_PolozkaBankovnihoVypisu]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0795810" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f31fc3a-8664-443c-93d4-5a0369d8d868" />
+    <UnitTestResult executionId="de048fde-e156-4ff4-b18d-8397ef1dc960" testId="3e595e14-3e8a-3ee8-d68f-c0517b459f44" testName="[Smoke_ObjectExistence].[37].[Existence of the table].[Table Mzdy_Zamestnanec]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0714370" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de048fde-e156-4ff4-b18d-8397ef1dc960" />
+    <UnitTestResult executionId="d899092b-5145-448f-bec0-f838b42461c0" testId="e98ba9b2-7b11-bcbc-7534-5441c3ffe8f3" testName="[Smoke_ObjectExistence].[13].[Existence of the table].[Table Finance_PolozkaPrikazuKUhrade]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0793440" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d899092b-5145-448f-bec0-f838b42461c0" />
+    <UnitTestResult executionId="4585adbe-e0b6-4907-becf-942f9f7c2a52" testId="1ab7735e-377f-01ed-d8c3-0db955cf8049" testName="[Integration_StagingxDim&amp;Fact].[8].[ST - Amount check].[Table [Dim].[Document]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.9854610" startTime="2020-10-28T15:02:40.0000000+01:00" endTime="2020-10-28T15:02:41.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4585adbe-e0b6-4907-becf-942f9f7c2a52">
+      <Output>
+        <ErrorInfo>
+          <Message>There is at least one row, but no rows were expected:&#xD;
+&#xD;
+┌─────────────┬───────────────────────────┬─────────────────┬─────────────────────┬─────────────────┐&#xD;
+│Document ID  │Document Description       │Amount Paid CZK  │Amount with VAT CZK  │Document Type    │&#xD;
+╞═════════════╪═══════════════════════════╪═════════════════╪═════════════════════╪═════════════════╡&#xD;
+│18           │Opravný daňový doklad ...  │0.0000           │-4850.8900           │faktura přijatá  │&#xD;
+└─────────────┴───────────────────────────┴─────────────────┴─────────────────────┴─────────────────┘&#xD;
+&#xD;
+&#xD;
+Test description: Check if sum of [Amount Paid CZK] is higher than [Amount with VAT CZK]&#xD;
+TestQuerySource: BigBang&#xD;
+TestQuery:&#xD;
+&#xD;
+    select [Document ID], [Document Description], [Amount Paid CZK], [Amount with VAT CZK], [Document Type]&#xD;
+from dim.Document D&#xD;
+join dim.[Document Type] DT&#xD;
+on D.[Document Type ID] = DT.[Document Type ID]&#xD;
+where [Amount Paid CZK] &gt; [Amount with VAT CZK]&#xD;
+&#xD;
+</Message>
+          <StackTrace>   at JC.Unit.TestExecution.nUnitRunner.RunAllTests(TestDefinition testDefinition) in D:\a\1\s\MainCore\JC.Unit\JC.Unit\TestExecution\nUnitRunner.cs:line 59&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c7edb9c-4117-4e12-bf30-2d92d6c6c84a" testId="ebaeadec-2162-4787-8a1c-fd15c278512e" testName="[Integration_StagingxDim&amp;Fact].[35].[IT - Staging table is a subset of a dimension].[StagingMoney.Objednavky_ObjednavkaPrijata]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0366820" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c7edb9c-4117-4e12-bf30-2d92d6c6c84a" />
+    <UnitTestResult executionId="d96ec096-1816-4536-9769-e2b3e8079269" testId="6ef871d9-313f-345e-6695-79d3809a83b3" testName="[Smoke_ObjectExistence].[42].[Existence of the table].[Table Mzdy_TypPracovnihoPomeru]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0805400" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d96ec096-1816-4536-9769-e2b3e8079269" />
+    <UnitTestResult executionId="84f015e6-d61a-40de-893b-072dd9c32b93" testId="821e872f-8ad4-4756-a10a-1a9afe75ca93" testName="[Integration_StagingxDim&amp;Fact].[33].[IT - Staging table is a subset of a dimension].[StagingMoney.Fakturace_ZalohovaFakturaPrijata]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0440940" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84f015e6-d61a-40de-893b-072dd9c32b93" />
+    <UnitTestResult executionId="263a55a3-2960-48c8-8b1b-b5ac929ce7dc" testId="3db5c791-ffce-6a05-5860-fd4dfbc84e5a" testName="[Integration_StagingxDim&amp;Fact].[10].[ST - Credit and Debit].[Table [Fact].[Account Balance]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:01.6241810" startTime="2020-10-28T15:02:41.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="263a55a3-2960-48c8-8b1b-b5ac929ce7dc" />
+    <UnitTestResult executionId="a2e9d099-5500-45dd-b5bc-510b943045f3" testId="b36c18c2-2f16-c4b0-0e40-bd5cc9cf030a" testName="[Integration_StagingxDim&amp;Fact].[3].[ST - Not NULL values].[Table [Fact].[Person Capacity]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.2535710" startTime="2020-10-28T15:02:40.0000000+01:00" endTime="2020-10-28T15:02:40.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2e9d099-5500-45dd-b5bc-510b943045f3" />
+    <UnitTestResult executionId="504226df-3185-4ca0-9316-f4caa3ed3762" testId="2842dc64-121e-69f4-e399-0524fee8d051" testName="[Smoke_ObjectExistence].[43].[Existence of the table].[Table Mzdy_ZamestnanecNepritomnost]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0863360" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="504226df-3185-4ca0-9316-f4caa3ed3762" />
+    <UnitTestResult executionId="9cfee130-5496-4101-b49a-0d5e2bca6636" testId="51d5df11-837d-fbef-2072-1a7a898a69fb" testName="[Smoke_ObjectExistence].[57].[Existence of the table].[Table Revenue Cost Category Specification]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0893719" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9cfee130-5496-4101-b49a-0d5e2bca6636" />
+    <UnitTestResult executionId="494657ed-20f1-49ff-94ef-e63dc6475675" testId="bbd35e0e-bb7e-d19c-146d-4ca86003d252" testName="[Integration_StagingxDim&amp;Fact].[32].[IT - Staging table is a subset of a dimension].[StagingMoney.Fakturace_ZalohovaFakturaVydana]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1390630" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="494657ed-20f1-49ff-94ef-e63dc6475675" />
+    <UnitTestResult executionId="7c46dc81-a035-419c-86a4-512862b960e5" testId="4717d6b8-16a3-1be3-996f-d263b9ce1288" testName="[Smoke_ObjectExistence].[47].[Existence of the table].[Table Personalistika_Zamestnanec]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0806960" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c46dc81-a035-419c-86a4-512862b960e5" />
+    <UnitTestResult executionId="4da2c3e1-bc40-4ed4-9a00-c4dcbed83146" testId="da0038a8-2636-09ae-f494-d1299494c0c0" testName="[Smoke_ObjectExistence].[36].[Existence of the table].[Table Mzdy_Mzda]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0819600" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4da2c3e1-bc40-4ed4-9a00-c4dcbed83146" />
+    <UnitTestResult executionId="a3b1f789-0643-4f90-8975-551cdd961ff0" testId="fea8ee86-f243-4070-1133-af94f671b1b8" testName="[Smoke_ObjectExistence].[32].[Existence of the table].[Table Ucetnictvi_PolozkaInternihoDokladu]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0809860" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3b1f789-0643-4f90-8975-551cdd961ff0" />
+    <UnitTestResult executionId="c41aea92-481d-41a5-94d5-9ccaa69cec13" testId="4c3281ce-958d-c17c-c4db-acdbee707867" testName="[Integration_StagingxDim&amp;Fact].[42].[ST - Revenue Cost Category].[ST - Revenue Cost Category Assigned]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0392130" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c41aea92-481d-41a5-94d5-9ccaa69cec13" />
+    <UnitTestResult executionId="5f126c5f-e64a-4636-b493-6ca5ee7f3c28" testId="f6a3b2c6-2ece-d171-8a08-a5b7be76bf67" testName="[Integration_StagingxDim&amp;Fact].[36].[IT - Staging table is a subset of a dimension].[StagingMoney.Adresar_Firma]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0462620" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f126c5f-e64a-4636-b493-6ca5ee7f3c28" />
+    <UnitTestResult executionId="a43a4b3d-6957-4432-b676-88617ccf3c9c" testId="4e58d51f-82e8-9321-f845-d7958f15e29d" testName="[Smoke_ObjectExistence].[56].[Existence of the table].[Table Revenue Cost Category]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0745820" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a43a4b3d-6957-4432-b676-88617ccf3c9c" />
+    <UnitTestResult executionId="275155d1-f2d8-493a-95ae-fa4bf0fee3c5" testId="1b0f98fd-1d63-8013-f76a-ac489a4f9507" testName="[Smoke_ObjectExistence].[40].[Existence of the table].[Table Mzdy_NepritomnostVMesici]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0820660" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="275155d1-f2d8-493a-95ae-fa4bf0fee3c5" />
+    <UnitTestResult executionId="253ebaec-bf5d-4c6f-80aa-b33227a14c53" testId="18b18861-0e44-b868-8a5f-964d2292f002" testName="[Smoke_ObjectExistence].[17].[Existence of the table].[Table Fakturace_PolozkaZalohoveFakturyVydane]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0893690" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="253ebaec-bf5d-4c6f-80aa-b33227a14c53" />
+    <UnitTestResult executionId="e34f743a-a5f2-4f36-9b2c-65f0e1e37cf7" testId="6d64c653-9c32-1272-4a79-b9f397aa1294" testName="[Integration_StagingxDim&amp;Fact].[11].[IT - Sum check by Document Type].[Table [Fakturace_FakturaVydana]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.4381800" startTime="2020-10-28T15:02:41.0000000+01:00" endTime="2020-10-28T15:02:41.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e34f743a-a5f2-4f36-9b2c-65f0e1e37cf7" />
+    <UnitTestResult executionId="98e09a6b-cb2d-411e-ba8b-90f88e2e14bc" testId="418d3889-c0f4-fa67-39dd-4c1a403bf7e3" testName="[Smoke_ObjectExistence].[34].[Existence of the table].[Table Work Records]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0792630" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98e09a6b-cb2d-411e-ba8b-90f88e2e14bc" />
+    <UnitTestResult executionId="9083ff87-8a08-46a7-9ab3-614528e525e0" testId="7cf2e1c7-c3b0-6dde-9ff6-bdc5372fabee" testName="[Smoke_ObjectExistence].[19].[Existence of the table].[Table EconomicBase_DruhDokladu]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0822140" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9083ff87-8a08-46a7-9ab3-614528e525e0" />
+    <UnitTestResult executionId="8faa85b9-71ac-4944-8f53-22e4fabfaa46" testId="45d2f5aa-bfed-e5b4-af2a-66055047a3eb" testName="[Smoke_ObjectExistence].[24].[Existence of the table].[Table Fakturace_PolozkaZalohoveFakturyPrijate]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0814060" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8faa85b9-71ac-4944-8f53-22e4fabfaa46" />
+    <UnitTestResult executionId="b8546141-7d9d-48ce-bb44-6d8e6686cf3e" testId="20114aae-22cd-37b0-1449-9187519c2520" testName="[Smoke_ObjectExistence].[21].[Existence of the table].[Table S5_Ucetnictvi_UcetniDenikTranspozice]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0724360" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8546141-7d9d-48ce-bb44-6d8e6686cf3e" />
+    <UnitTestResult executionId="5a0eb556-3590-4b38-ad35-96fb1d3d7724" testId="fd5e261c-a769-e37b-93f3-db8fd9795ff2" testName="[Smoke_ObjectExistence].[33].[Existence of the table].[Table Ucetnictvi_PolozkaPohledavkovehoDokladu]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0808750" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a0eb556-3590-4b38-ad35-96fb1d3d7724" />
+    <UnitTestResult executionId="f10413ca-23e8-476b-b026-a3b4a1ba250a" testId="c430239a-df21-fddb-6351-0e824ec43dd2" testName="[Smoke_ObjectExistence].[12].[Existence of the table].[Table Fakturace_FakturaPrijata]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0804560" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f10413ca-23e8-476b-b026-a3b4a1ba250a" />
+    <UnitTestResult executionId="7d8ec69d-4232-446a-9e2f-a5372c273cb0" testId="676e7cea-5aa4-1a91-eaf5-d360655ae92e" testName="[Smoke_ObjectExistence].[54].[Existence of the table].[Table TransactionCurrency]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0790790" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d8ec69d-4232-446a-9e2f-a5372c273cb0" />
+    <UnitTestResult executionId="6bc2264c-726d-43f9-8cb6-2bc73185c5a0" testId="8e1fb5dc-b2d8-31f3-5b99-a714e28802f3" testName="[Integration_StagingxDim&amp;Fact].[21].[IT - Staging table is a subset of a dimension].[StagingMoney.Ucetnictvi_Ucet]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0374050" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bc2264c-726d-43f9-8cb6-2bc73185c5a0" />
+    <UnitTestResult executionId="01a2c297-5596-42d1-abd7-e37a3c3f0222" testId="becefbb3-296f-28e1-a93c-1a14e25a8f3d" testName="[Smoke_ObjectExistence].[1].[Existence of the table].[Table Objednavky_ObjednavkaPrijata]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0818080" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01a2c297-5596-42d1-abd7-e37a3c3f0222" />
+    <UnitTestResult executionId="51088d75-2430-4702-b259-aaa95a1670ef" testId="ec69f802-95a3-4b41-2a0c-e181c682aec8" testName="[Integration_StagingxDim&amp;Fact].[6].[ST - Check of Column values].[View [Model].[Contract]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.7454070" startTime="2020-10-28T15:02:40.0000000+01:00" endTime="2020-10-28T15:02:41.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51088d75-2430-4702-b259-aaa95a1670ef" />
+    <UnitTestResult executionId="41e81c82-b65d-4df7-9ea1-c4ab0c30efc4" testId="40a17607-ffd3-0727-13e7-309842913b28" testName="[Integration_StagingxDim&amp;Fact].[27].[IT - Staging table is a subset of a dimension].[StagingMoney.Finance_PokladniDoklad]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1261600" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41e81c82-b65d-4df7-9ea1-c4ab0c30efc4">
+      <Output>
+        <ErrorInfo>
+          <Message>There is at least one row, but no rows were expected:&#xD;
+&#xD;
+┌───────────────────────────┬──────────────┬───────┐&#xD;
+│ID                         │CisloDokladu  │Nazev  │&#xD;
+╞═══════════════════════════╪══════════════╪═══════╡&#xD;
+│72262521-0ff7-4c29-a93...  │PV00009       │       │&#xD;
+└───────────────────────────┴──────────────┴───────┘&#xD;
+&#xD;
+&#xD;
+Test description: Dim.Document&#xD;
+TestQuerySource: BigBang&#xD;
+TestQuery:&#xD;
+&#xD;
+    select ID, CisloDokladu, Nazev from StagingMoney.Finance_PokladniDoklad&#xD;
+    except&#xD;
+&#xD;
+ SELECT [Document Money Src ID]&#xD;
+      ,[Document Number]&#xD;
+      ,[Document Description]&#xD;
+  FROM [Dim].[Document]&#xD;
+&#xD;
+</Message>
+          <StackTrace>   at JC.Unit.TestExecution.nUnitRunner.RunAllTests(TestDefinition testDefinition) in D:\a\1\s\MainCore\JC.Unit\JC.Unit\TestExecution\nUnitRunner.cs:line 59&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="94082f01-1a00-4ccb-b977-b5747e44ce01" testId="a839709d-1374-8ac0-c102-62728a740644" testName="[Integration_StagingxDim&amp;Fact].[19].[IT - Sum check by Document Type].[Table [Fakturace_ZalohovaFakturaVydana]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0805150" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94082f01-1a00-4ccb-b977-b5747e44ce01" />
+    <UnitTestResult executionId="0577324b-c856-4367-a9a0-6222d082ffa3" testId="804bc72a-f601-f749-749a-fe98c1be182c" testName="[Integration_StagingxDim&amp;Fact].[29].[IT - Staging table is a subset of a dimension].[ StagingMoney.Fakturace_FakturaVydana&#xA;    except]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.2037890" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0577324b-c856-4367-a9a0-6222d082ffa3" />
+    <UnitTestResult executionId="fc7dc1f5-d1e0-4520-a242-4faf873fb366" testId="68087df4-ff6a-60f2-a979-00e2356cf9b0" testName="[Integration_StagingxDim&amp;Fact].[7].[ST - Sum of Amounts].[Table [Fact].[Journal]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.8744320" startTime="2020-10-28T15:02:40.0000000+01:00" endTime="2020-10-28T15:02:41.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc7dc1f5-d1e0-4520-a242-4faf873fb366" />
+    <UnitTestResult executionId="9bb42a1b-f529-4cfd-82ce-0c7f91f4f25a" testId="0d51d202-9f0e-8e87-796e-4d8c0987e236" testName="[Smoke_ObjectExistence].[52].[Existence of the table].[Table OpportunityHeader]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0810990" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bb42a1b-f529-4cfd-82ce-0c7f91f4f25a" />
+    <UnitTestResult executionId="598f377f-eea5-4741-b2d2-1dbc9514b0e6" testId="7557f51e-c690-f35a-c69e-f1b0099d098d" testName="[Integration_StagingxDim&amp;Fact].[23].[IT - Staging table is a subset of a dimension].[StagingMoney.Ciselniky_Zakazka]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1774990" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="598f377f-eea5-4741-b2d2-1dbc9514b0e6" />
+    <UnitTestResult executionId="24b84d79-82d2-4ded-9346-1b4d0ec9d163" testId="74db6c8f-742d-cdd0-fa94-9d1c48485dbf" testName="[Integration_StagingxDim&amp;Fact].[9].[ST - Credit and Debit].[Table [Fact].[Journal]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.4053649" startTime="2020-10-28T15:02:41.0000000+01:00" endTime="2020-10-28T15:02:41.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24b84d79-82d2-4ded-9346-1b4d0ec9d163" />
+    <UnitTestResult executionId="5fc8be7f-6821-41f5-b9d5-c4a2ae02d164" testId="8297bce6-fe99-c398-4990-1b0593c648e4" testName="[Smoke_ObjectExistence].[53].[Existence of the table].[Table SystemUser]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0801840" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5fc8be7f-6821-41f5-b9d5-c4a2ae02d164" />
+    <UnitTestResult executionId="e43059a8-ccfa-4e45-95cc-9fe26644e259" testId="a8c716b8-4193-980e-46d0-7cd4ef03d825" testName="[Smoke_ObjectExistence].[55].[Existence of the table].[Table LeadToOpportunityTarget]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0738370" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e43059a8-ccfa-4e45-95cc-9fe26644e259" />
+    <UnitTestResult executionId="38925615-349b-4f69-ae75-703b21a19cc2" testId="419d32a9-d597-87dc-1eeb-30b5d4b5bb1a" testName="[Smoke_ObjectExistence].[22].[Existence of the table].[Table Fakturace_PolozkaFakturyVydane]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0853530" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38925615-349b-4f69-ae75-703b21a19cc2" />
+    <UnitTestResult executionId="55dbbbc1-c6a4-45d2-ba02-e33f5270f5b8" testId="52c3a3ad-7e55-dcc8-9df0-d1a8aea353c2" testName="[Smoke_ObjectExistence].[49].[Existence of the table].[Table Contact]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0822750" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55dbbbc1-c6a4-45d2-ba02-e33f5270f5b8" />
+    <UnitTestResult executionId="38dcfb2f-a639-4840-bb41-e2bdbdbbb47c" testId="a6ff8bd4-840e-7b1c-0622-bf6ed6997953" testName="[Integration_StagingxDim&amp;Fact].[38].[ST - Document Payment Status].[Document Payment Status - Nezaplaceno]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0367740" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="38dcfb2f-a639-4840-bb41-e2bdbdbbb47c" />
+    <UnitTestResult executionId="9de6b98a-8cf5-4316-92a9-a01ac8324560" testId="e6a75b46-68e3-68c6-0bac-3b5c7b10f84c" testName="[Integration_StagingxDim&amp;Fact].[41].[DQ - Paid more than needed].[Paid more than needed on document]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0425090" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9de6b98a-8cf5-4316-92a9-a01ac8324560" />
+    <UnitTestResult executionId="43a03e41-7db1-4263-bb05-ea375a50bbde" testId="82d47166-fa0d-eeb8-402e-c62c6e3b2d5d" testName="[Integration_StagingxDim&amp;Fact].[17].[IT - Sum check by Document Type].[Table [Finance_PokladniDoklad]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0887390" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43a03e41-7db1-4263-bb05-ea375a50bbde" />
+    <UnitTestResult executionId="944db5f9-945d-4fed-b736-cc9eb58e2f47" testId="fa48f061-b547-454d-8974-cc937051bb27" testName="[Smoke_ObjectExistence].[50].[Existence of the table].[Table LeadTalxis]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0765820" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="944db5f9-945d-4fed-b736-cc9eb58e2f47" />
+    <UnitTestResult executionId="962e8df6-6a6b-4845-809b-662114adcd17" testId="40bef62d-2799-3cb2-1e58-2af04995aa7b" testName="[Smoke_ObjectExistence].[15].[Existence of the table].[Table Meny_Mena]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0709490" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="962e8df6-6a6b-4845-809b-662114adcd17" />
+    <UnitTestResult executionId="5b664c27-c4b6-454d-ab0a-4a7894dbe3e6" testId="30460f3b-eb1a-3117-0195-c89242d95fbf" testName="[Integration_StagingxDim&amp;Fact].[28].[IT - Staging table is a subset of a dimension].[StagingMoney.Fakturace_FakturaPrijata]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.2012220" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b664c27-c4b6-454d-ab0a-4a7894dbe3e6">
+      <Output>
+        <ErrorInfo>
+          <Message>There is at least one row, but no rows were expected:&#xD;
+&#xD;
+┌───────────────────────────┬──────────────┬────────────────┐&#xD;
+│ID                         │CisloDokladu  │Nazev           │&#xD;
+╞═══════════════════════════╪══════════════╪════════════════╡&#xD;
+│0d41c085-34ee-4398-933...  │FP00007       │nákup potravin  │&#xD;
+└───────────────────────────┴──────────────┴────────────────┘&#xD;
+&#xD;
+&#xD;
+Test description: Dim.Document&#xD;
+TestQuerySource: BigBang&#xD;
+TestQuery:&#xD;
+&#xD;
+    select ID, CisloDokladu, Nazev from StagingMoney.Fakturace_FakturaPrijata&#xD;
+    except&#xD;
+&#xD;
+ SELECT [Document Money Src ID]&#xD;
+      ,[Document Number]&#xD;
+      ,[Document Description]&#xD;
+  FROM [Dim].[Document]&#xD;
+&#xD;
+</Message>
+          <StackTrace>   at JC.Unit.TestExecution.nUnitRunner.RunAllTests(TestDefinition testDefinition) in D:\a\1\s\MainCore\JC.Unit\JC.Unit\TestExecution\nUnitRunner.cs:line 59&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="980505af-4fa6-4f1b-8911-82b988724404" testId="92e29243-f60c-3207-106a-1d834fb4d7e0" testName="[Smoke_ObjectExistence].[25].[Existence of the table].[Table Ucetnictvi_PolozkaZavazkovehoDokladu]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0748019" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="980505af-4fa6-4f1b-8911-82b988724404" />
+    <UnitTestResult executionId="c0491415-b0d8-4a5a-82ef-74f0f61af719" testId="f0e14953-0487-efc3-1455-7bfbfe66d3f5" testName="[Integration_StagingxDim&amp;Fact].[20].[IT - Sum check by Document Type].[Table [Ucetnictvi_ZavazkovyDoklad]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.2441490" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0491415-b0d8-4a5a-82ef-74f0f61af719" />
+    <UnitTestResult executionId="adcc191b-770e-4928-a279-28300071e3ea" testId="a7f1c5d9-3dd4-03b5-631d-00450448e757" testName="[Integration_MoneyxStaging].[6].[ST - List of existing tables - StagingMoney].[Tables Existence]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.6999540" startTime="2020-10-28T15:02:39.0000000+01:00" endTime="2020-10-28T15:02:40.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="adcc191b-770e-4928-a279-28300071e3ea" />
+    <UnitTestResult executionId="5cd4e1bb-502e-4e79-a7b2-16f324693e02" testId="ee6274a6-d68c-445d-a661-6882990db88d" testName="[Smoke_ObjectExistence].[16].[Existence of the table].[Table Ucetnictvi_Ucet]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0701560" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5cd4e1bb-502e-4e79-a7b2-16f324693e02" />
+    <UnitTestResult executionId="b84d7027-4940-44f0-956d-e5137742a9ad" testId="94a1c9bc-6703-5715-60b9-f1ef941637e7" testName="[Integration_StagingxDim&amp;Fact].[1].[ST - No empty tables Dim + Fact].[No empty Dim &amp; Fact tables]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.3612820" startTime="2020-10-28T15:02:39.0000000+01:00" endTime="2020-10-28T15:02:40.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b84d7027-4940-44f0-956d-e5137742a9ad" />
+    <UnitTestResult executionId="1637b352-45ae-4a7d-b769-9593d97b5735" testId="883a7dda-e9ee-b281-0325-2730d6a6e7b7" testName="[Integration_StagingxDim&amp;Fact].[16].[IT - Sum check by Document Type].[Table [Ucetnictvi_PohledavkovyDoklad]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0808790" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1637b352-45ae-4a7d-b769-9593d97b5735" />
+    <UnitTestResult executionId="dd336d49-e336-4938-9187-dddd00eb8b69" testId="58940f79-27c1-f004-0cda-2c9c955f9a6c" testName="[Integration_StagingxDim&amp;Fact].[31].[IT - Staging table is a subset of a dimension].[StagingMoney.Finance_BankovniVypis]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1537380" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd336d49-e336-4938-9187-dddd00eb8b69">
+      <Output>
+        <ErrorInfo>
+          <Message>There is at least one row, but no rows were expected:&#xD;
+&#xD;
+┌───────────────────────────┬──────────────┬───────┐&#xD;
+│ID                         │CisloDokladu  │Nazev  │&#xD;
+╞═══════════════════════════╪══════════════╪═══════╡&#xD;
+│d810dead-7f36-485f-805...  │BVFS00001     │       │&#xD;
+└───────────────────────────┴──────────────┴───────┘&#xD;
+&#xD;
+&#xD;
+Test description: Dim.Document&#xD;
+TestQuerySource: BigBang&#xD;
+TestQuery:&#xD;
+&#xD;
+    select ID, CisloDokladu, Nazev from StagingMoney.Finance_BankovniVypis&#xD;
+    except&#xD;
+&#xD;
+ SELECT [Document Money Src ID]&#xD;
+      ,[Document Number]&#xD;
+      ,[Document Description]&#xD;
+  FROM [Dim].[Document]&#xD;
+&#xD;
+</Message>
+          <StackTrace>   at JC.Unit.TestExecution.nUnitRunner.RunAllTests(TestDefinition testDefinition) in D:\a\1\s\MainCore\JC.Unit\JC.Unit\TestExecution\nUnitRunner.cs:line 59&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4d1fe3e5-61d9-42f2-9a67-db7f81decfd3" testId="ef467e50-8cd0-e812-a730-294de2e8ad0f" testName="[Integration_StagingxDim&amp;Fact].[5].[ST - Check of not duplicate combinations].[Table [Fact].[Person Capacity]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1258430" startTime="2020-10-28T15:02:40.0000000+01:00" endTime="2020-10-28T15:02:40.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d1fe3e5-61d9-42f2-9a67-db7f81decfd3" />
+    <UnitTestResult executionId="13b85656-a79d-4352-93b3-b28493a7dcf0" testId="81abb510-fadd-909b-267d-cfb66ab8e4f9" testName="[Integration_StagingxDim&amp;Fact].[14].[IT - Sum check by Document Type].[Table [Ucetnictvi_InterniDoklad]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.3006110" startTime="2020-10-28T15:02:41.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13b85656-a79d-4352-93b3-b28493a7dcf0" />
+    <UnitTestResult executionId="6b002172-f677-4f50-bd56-f35d5fedb473" testId="7b2537ce-e820-5d98-57b2-e767c22e68d4" testName="[Integration_StagingxDim&amp;Fact].[15].[IT - Sum check by Document Type].[Table [Objednavky_ObjednavkaPrijata]]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.1611370" startTime="2020-10-28T15:02:42.0000000+01:00" endTime="2020-10-28T15:02:42.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b002172-f677-4f50-bd56-f35d5fedb473" />
+    <UnitTestResult executionId="cf1be0f2-ddda-4941-a15d-1729a7ae3630" testId="b9c9e4ae-229c-0f71-c5aa-98fe7605eaf4" testName="[Smoke_ObjectExistence].[51].[Existence of the table].[Table LeadToOpportunity]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0799499" startTime="2020-10-28T15:02:44.0000000+01:00" endTime="2020-10-28T15:02:44.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf1be0f2-ddda-4941-a15d-1729a7ae3630" />
+    <UnitTestResult executionId="9b9fb5e5-b6e4-4f0f-8eaa-581ba49c5416" testId="c756a6b5-9822-425b-d05b-10486fe83341" testName="[Smoke_ObjectExistence].[28].[Existence of the table].[Table Finance_PokladniDoklad]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0817100" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b9fb5e5-b6e4-4f0f-8eaa-581ba49c5416" />
+    <UnitTestResult executionId="a8567427-e1a1-4c81-9f7d-c6e8951266a9" testId="657fabb8-afdf-3e81-8619-3b18cd6e2f30" testName="[Smoke_ObjectExistence].[10].[Existence of the table].[Table Fakturace_FakturaVydana]" computerName="LAPTOP-OBK5BVVT" duration="00:00:00.0950339" startTime="2020-10-28T15:02:43.0000000+01:00" endTime="2020-10-28T15:02:43.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8567427-e1a1-4c81-9f7d-c6e8951266a9" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[20].[IT - Sum check by Document Type].[Table [Ucetnictvi_ZavazkovyDoklad]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="f0e14953-0487-efc3-1455-7bfbfe66d3f5">
+      <Execution id="c0491415-b0d8-4a5a-82ef-74f0f61af719" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[33].[IT - Staging table is a subset of a dimension].[StagingMoney.Fakturace_ZalohovaFakturaPrijata]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="821e872f-8ad4-4756-a10a-1a9afe75ca93">
+      <Execution id="84f015e6-d61a-40de-893b-072dd9c32b93" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[35].[Existence of the table].[Table Contract Rates]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="ee7b3397-05b3-5660-5f81-c9db969c5159">
+      <Execution id="9f7475c0-a828-40bb-a16b-048f0215385f" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[15].[Existence of the table].[Table Meny_Mena]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="40bef62d-2799-3cb2-1e58-2af04995aa7b">
+      <Execution id="962e8df6-6a6b-4845-809b-662114adcd17" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[10].[ST - Credit and Debit].[Table [Fact].[Account Balance]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="3db5c791-ffce-6a05-5860-fd4dfbc84e5a">
+      <Execution id="263a55a3-2960-48c8-8b1b-b5ac929ce7dc" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[20].[Existence of the table].[Table Ciselniky_Stredisko]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="2e3c31ea-d47c-7e26-f2f4-ddf1fa7d180e">
+      <Execution id="356bb31a-0d72-4391-8e30-32b047d4626a" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[44].[Existence of the table].[Table Mzdy_DruhNepritomnosti]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="4fe7149d-95b6-137a-5c7f-e332393585ef">
+      <Execution id="feb5ebbc-737f-41a0-ae24-9b86b6f2b2cd" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[29].[Existence of the table].[Table Adresar_Firma]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="7c2f79ab-8644-1b76-edfc-d1d7cfd5cae2">
+      <Execution id="062a8bf2-b7f7-42f7-993c-ef32b88df231" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[27].[IT - Staging table is a subset of a dimension].[StagingMoney.Finance_PokladniDoklad]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="40a17607-ffd3-0727-13e7-309842913b28">
+      <Execution id="41e81c82-b65d-4df7-9ea1-c4ab0c30efc4" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[58].[Existence of the table].[Table Contract Fees]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="b94a13f1-e0d2-a3a1-0150-4599409d2aff">
+      <Execution id="3c7a32a8-21da-41cb-a2ca-fb10bc906a59" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[23].[IT - Staging table is a subset of a dimension].[StagingMoney.Ciselniky_Zakazka]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="7557f51e-c690-f35a-c69e-f1b0099d098d">
+      <Execution id="598f377f-eea5-4741-b2d2-1dbc9514b0e6" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[8].[ST - Amount check].[Table [Dim].[Document]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="1ab7735e-377f-01ed-d8c3-0db955cf8049">
+      <Execution id="4585adbe-e0b6-4907-becf-942f9f7c2a52" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[56].[Existence of the table].[Table Revenue Cost Category]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="4e58d51f-82e8-9321-f845-d7958f15e29d">
+      <Execution id="a43a4b3d-6957-4432-b676-88617ccf3c9c" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[34].[Existence of the table].[Table Work Records]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="418d3889-c0f4-fa67-39dd-4c1a403bf7e3">
+      <Execution id="98e09a6b-cb2d-411e-ba8b-90f88e2e14bc" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[51].[Existence of the table].[Table LeadToOpportunity]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="b9c9e4ae-229c-0f71-c5aa-98fe7605eaf4">
+      <Execution id="cf1be0f2-ddda-4941-a15d-1729a7ae3630" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[37].[Existence of the table].[Table Mzdy_Zamestnanec]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="3e595e14-3e8a-3ee8-d68f-c0517b459f44">
+      <Execution id="de048fde-e156-4ff4-b18d-8397ef1dc960" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[21].[IT - Staging table is a subset of a dimension].[StagingMoney.Ucetnictvi_Ucet]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="8e1fb5dc-b2d8-31f3-5b99-a714e28802f3">
+      <Execution id="6bc2264c-726d-43f9-8cb6-2bc73185c5a0" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[14].[Existence of the table].[Table CSW_BI_Pohledavky2]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="864b6706-d1c5-e661-a612-b3725dce8068">
+      <Execution id="05df8d1f-5422-4cb3-8ab4-7f0cc591e364" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[9].[ST - Credit and Debit].[Table [Fact].[Journal]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="74db6c8f-742d-cdd0-fa94-9d1c48485dbf">
+      <Execution id="24b84d79-82d2-4ded-9346-1b4d0ec9d163" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[11].[Existence of the table].[Table Ucetnictvi_ZavazkovyDoklad]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="a9475b93-443b-d87f-a61f-8a41fc7ac6f1">
+      <Execution id="6449fde6-801b-4458-ac1a-debb6445e8a2" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[10].[Existence of the table].[Table Fakturace_FakturaVydana]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="657fabb8-afdf-3e81-8619-3b18cd6e2f30">
+      <Execution id="a8567427-e1a1-4c81-9f7d-c6e8951266a9" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[26].[IT - Staging table is a subset of a dimension].[StagingMoney.Ucetnictvi_ZavazkovyDoklad]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="59c40813-1907-f75a-f050-dbaa9195f6db">
+      <Execution id="452bcb15-87e1-4fd1-91b8-ef3ba812853d" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[34].[IT - Staging table is a subset of a dimension].[StagingMoney.Finance_PrikazKUhrade]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="5362ad2c-828a-7aad-1d15-a999fe6c67ac">
+      <Execution id="9ae226e6-f856-4c34-9aa2-d523c524f7d3" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[1].[ST - No empty tables Dim + Fact].[No empty Dim &amp; Fact tables]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="94a1c9bc-6703-5715-60b9-f1ef941637e7">
+      <Execution id="b84d7027-4940-44f0-956d-e5137742a9ad" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[48].[Existence of the table].[Table Account]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="4d3a32a4-4609-a802-8e5d-72092fb3527d">
+      <Execution id="dbf90894-4fb1-4d87-b1dc-01f6d78b4201" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[5].[Existence of the table].[Table Finance_BankovniVypis]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="8f902760-590d-6675-0ade-d6de7c771a6b">
+      <Execution id="31c99708-4102-48b1-a8c5-c94987bdc012" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[50].[Existence of the table].[Table LeadTalxis]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="fa48f061-b547-454d-8974-cc937051bb27">
+      <Execution id="944db5f9-945d-4fed-b736-cc9eb58e2f47" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[40].[Existence of the table].[Table Mzdy_NepritomnostVMesici]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="1b0f98fd-1d63-8013-f76a-ac489a4f9507">
+      <Execution id="275155d1-f2d8-493a-95ae-fa4bf0fee3c5" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[14].[IT - Sum check by Document Type].[Table [Ucetnictvi_InterniDoklad]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="81abb510-fadd-909b-267d-cfb66ab8e4f9">
+      <Execution id="13b85656-a79d-4352-93b3-b28493a7dcf0" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[19].[IT - Sum check by Document Type].[Table [Fakturace_ZalohovaFakturaVydana]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="a839709d-1374-8ac0-c102-62728a740644">
+      <Execution id="94082f01-1a00-4ccb-b977-b5747e44ce01" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[32].[IT - Staging table is a subset of a dimension].[StagingMoney.Fakturace_ZalohovaFakturaVydana]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="bbd35e0e-bb7e-d19c-146d-4ca86003d252">
+      <Execution id="494657ed-20f1-49ff-94ef-e63dc6475675" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[4].[Existence of the table].[Table Finance_PolozkaBankovnihoVypisu]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="d4f48ae9-e7e3-a446-ad84-9aae9cef5d7c">
+      <Execution id="0f31fc3a-8664-443c-93d4-5a0369d8d868" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[30].[IT - Staging table is a subset of a dimension].[StagingMoney.Ucetnictvi_InterniDoklad]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="6f97390d-f333-7779-747b-5eb57b7fd1d8">
+      <Execution id="26255f70-2462-488c-914f-ad6a9fa81f52" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[2].[ST - Accounting logic].[Journal x Account Balance check]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="52a5227e-4b35-a770-eb37-5df487124947">
+      <Execution id="fdf1b9d7-d77d-4467-91e1-5909778c0192" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[7].[ST - Sum of Amounts].[Table [Fact].[Journal]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="68087df4-ff6a-60f2-a979-00e2356cf9b0">
+      <Execution id="fc7dc1f5-d1e0-4520-a242-4faf873fb366" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[42].[Existence of the table].[Table Mzdy_TypPracovnihoPomeru]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="6ef871d9-313f-345e-6695-79d3809a83b3">
+      <Execution id="d96ec096-1816-4536-9769-e2b3e8079269" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_MoneyxStaging].[6].[ST - List of existing tables - StagingMoney].[Tables Existence]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="a7f1c5d9-3dd4-03b5-631d-00450448e757">
+      <Execution id="adcc191b-770e-4928-a279-28300071e3ea" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[31].[IT - Staging table is a subset of a dimension].[StagingMoney.Finance_BankovniVypis]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="58940f79-27c1-f004-0cda-2c9c955f9a6c">
+      <Execution id="dd336d49-e336-4938-9187-dddd00eb8b69" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[25].[IT - Staging table is a subset of a dimension].[StagingMoney.Ciselniky_Stredisko]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="30e9c341-1c1c-069d-a089-d4302828d75b">
+      <Execution id="58b864db-f1c6-49f7-b5fd-ec09218a1632" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[6].[ST - Check of Column values].[View [Model].[Contract]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="ec69f802-95a3-4b41-2a0c-e181c682aec8">
+      <Execution id="51088d75-2430-4702-b259-aaa95a1670ef" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[22].[IT - Staging table is a subset of a dimension].[StagingMoney.Ciselniky_Cinnost]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="e5564b1f-76b7-9dd4-7b65-c1c566b78c48">
+      <Execution id="b8b906cf-84ab-4998-acb9-7dc83fff811d" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[39].[ST - Document Payment Status].[Document Payment Status - Zaplaceno]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="20f5e4c2-74a8-19b6-8770-cfb85b838a3e">
+      <Execution id="282faa36-c193-4d04-a106-9736d873ca15" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[12].[IT - Sum check by Document Type].[Table [Finance_BankovniVypis]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="c6060242-f5fb-cdf7-fa1d-63bf1a7089d9">
+      <Execution id="a136e330-f9ce-4993-8249-a3685b1ec703" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[24].[Existence of the table].[Table Fakturace_PolozkaZalohoveFakturyPrijate]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="45d2f5aa-bfed-e5b4-af2a-66055047a3eb">
+      <Execution id="8faa85b9-71ac-4944-8f53-22e4fabfaa46" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[32].[Existence of the table].[Table Ucetnictvi_PolozkaInternihoDokladu]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="fea8ee86-f243-4070-1133-af94f671b1b8">
+      <Execution id="a3b1f789-0643-4f90-8975-551cdd961ff0" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_MoneyxStaging].[5].[ST - No empty tables - StagingMoney].[No empty tables]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="378cf331-36e7-aa16-9514-df1f6a19a35c">
+      <Execution id="c1e37a84-954c-4b65-ba35-980022f16183" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[13].[IT - Sum check by Document Type].[Table [Fakturace_FakturaPrijata]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="08967945-3295-54c1-32d2-2e73fefe3a5f">
+      <Execution id="89a12ad1-dcc0-41e3-aa28-b6e1feca908b" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[37].[ST - Document Payment Status].[Document Payment Status - Castecne Zaplaceno]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="16df9282-30d4-321f-d81a-c69931a0cf80">
+      <Execution id="893a113f-81bd-46e0-9f86-2b99f2b84fa0" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[21].[Existence of the table].[Table S5_Ucetnictvi_UcetniDenikTranspozice]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="20114aae-22cd-37b0-1449-9187519c2520">
+      <Execution id="b8546141-7d9d-48ce-bb44-6d8e6686cf3e" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[46].[Existence of the table].[Table Person]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="16d5e31b-ede9-d3bc-1f7a-c861155e9c35">
+      <Execution id="036517bb-c171-4976-8285-752629ffe564" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[16].[IT - Sum check by Document Type].[Table [Ucetnictvi_PohledavkovyDoklad]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="883a7dda-e9ee-b281-0325-2730d6a6e7b7">
+      <Execution id="1637b352-45ae-4a7d-b769-9593d97b5735" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[6].[Existence of the table].[Table Finance_PrikazKUhrade]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="0dce3cbb-c5be-8ce9-26c7-823b70f36b4e">
+      <Execution id="21d41544-75e9-484d-9498-42b3f16354fc" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[18].[Existence of the table].[Table Ciselniky_Stat]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="1cb03d79-ff9b-500d-7915-ae447d9bbf71">
+      <Execution id="36f9d56a-bcd5-4de1-b97c-ecfb2ce79b4f" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[27].[Existence of the table].[Table Ciselniky_Zakazka]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="213ee05a-4a01-4b18-17cf-daa5bcd1646d">
+      <Execution id="2e7f50dd-f672-45da-be29-017cfa97e8e9" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[28].[Existence of the table].[Table Finance_PokladniDoklad]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="c756a6b5-9822-425b-d05b-10486fe83341">
+      <Execution id="9b9fb5e5-b6e4-4f0f-8eaa-581ba49c5416" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[38].[Existence of the table].[Table Personalistika_ZamestnanecDoplnujiciUdaje]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="6f12a022-e888-a020-9538-58aae455a3ed">
+      <Execution id="47f8ad9e-4d1e-484f-8bc7-6dbd84f5422a" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[3].[Existence of the table].[Table Fakturace_ZalohovaFakturaVydana]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="87b6bec7-37b1-b032-698d-279ffdadc596">
+      <Execution id="97fcda14-42ff-4026-a8c6-c8bd4eaca9d5" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[30].[Existence of the table].[Table Ucetnictvi_PohledavkovyDoklad]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="50fafed6-ad95-43c4-24f8-d614d5c94d96">
+      <Execution id="d5bd0ffb-0d67-4fa1-91dc-3ae45c5eaf99" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[9].[Existence of the table].[Table Fakturace_ZalohovaFakturaPrijata]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="16476183-8a99-9d57-9a05-ab6dceed5fad">
+      <Execution id="1b445a19-f59f-45f3-82db-7f8bcd511877" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[36].[Existence of the table].[Table Mzdy_Mzda]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="da0038a8-2636-09ae-f494-d1299494c0c0">
+      <Execution id="4da2c3e1-bc40-4ed4-9a00-c4dcbed83146" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[17].[IT - Sum check by Document Type].[Table [Finance_PokladniDoklad]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="82d47166-fa0d-eeb8-402e-c62c6e3b2d5d">
+      <Execution id="43a03e41-7db1-4263-bb05-ea375a50bbde" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[18].[IT - Sum check by Document Type].[Table [Fakturace_ZalohovaFakturaPrijata]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="2399483b-6614-c431-9362-847b6c1e4592">
+      <Execution id="4001ea28-879b-43d7-a3d2-dfe23d02cd41" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[24].[IT - Staging table is a subset of a dimension].[StagingMoney.Meny_Mena]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="271c685b-4f27-d869-82ad-0a11c3050d03">
+      <Execution id="ae1ffc8a-5023-438c-9a21-ecb721e6da21" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[7].[Existence of the table].[Table Ucetnictvi_StavUctu]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="93a45ca3-7b48-9e02-d63a-86d7e8b5547f">
+      <Execution id="a623e36b-dbbd-4295-8fa8-576dd95e9ad4" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[31].[Existence of the table].[Table Objednavky_PolozkaObjednavkyPrijate]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="18acec2e-1e7a-3778-00b9-41543d6289fe">
+      <Execution id="7ddaa018-a650-45cf-8092-6ace8f44cb9c" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[53].[Existence of the table].[Table SystemUser]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="8297bce6-fe99-c398-4990-1b0593c648e4">
+      <Execution id="5fc8be7f-6821-41f5-b9d5-c4a2ae02d164" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[8].[Existence of the table].[Table Ucetnictvi_InterniDoklad]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="6febc6cd-4565-b196-9913-89791c7f65ab">
+      <Execution id="798f09f7-9626-4db0-a7be-2a28a99cd544" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[38].[ST - Document Payment Status].[Document Payment Status - Nezaplaceno]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="a6ff8bd4-840e-7b1c-0622-bf6ed6997953">
+      <Execution id="38dcfb2f-a639-4840-bb41-e2bdbdbbb47c" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[1].[Existence of the table].[Table Objednavky_ObjednavkaPrijata]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="becefbb3-296f-28e1-a93c-1a14e25a8f3d">
+      <Execution id="01a2c297-5596-42d1-abd7-e37a3c3f0222" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[49].[Existence of the table].[Table Contact]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="52c3a3ad-7e55-dcc8-9df0-d1a8aea353c2">
+      <Execution id="55dbbbc1-c6a4-45d2-ba02-e33f5270f5b8" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[25].[Existence of the table].[Table Ucetnictvi_PolozkaZavazkovehoDokladu]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="92e29243-f60c-3207-106a-1d834fb4d7e0">
+      <Execution id="980505af-4fa6-4f1b-8911-82b988724404" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[2].[Existence of the table].[Table Finance_PolozkaPokladnihoDokladu]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="a8dfca29-b254-c754-1cae-f37950e06b2d">
+      <Execution id="07cb0eaa-f2cb-4121-b5a2-d412a8bc66ac" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[28].[IT - Staging table is a subset of a dimension].[StagingMoney.Fakturace_FakturaPrijata]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="30460f3b-eb1a-3117-0195-c89242d95fbf">
+      <Execution id="5b664c27-c4b6-454d-ab0a-4a7894dbe3e6" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[5].[ST - Check of not duplicate combinations].[Table [Fact].[Person Capacity]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="ef467e50-8cd0-e812-a730-294de2e8ad0f">
+      <Execution id="4d1fe3e5-61d9-42f2-9a67-db7f81decfd3" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[11].[IT - Sum check by Document Type].[Table [Fakturace_FakturaVydana]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="6d64c653-9c32-1272-4a79-b9f397aa1294">
+      <Execution id="e34f743a-a5f2-4f36-9b2c-65f0e1e37cf7" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[40].[ST - Document Payment Status].[Document Payment Status - N/A for Storno]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="4d4f2eb1-4b6a-f2f9-5631-fba458167b0b">
+      <Execution id="1674294c-a0fc-4059-8123-3070576cd2f8" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[45].[Existence of the table].[Table Customer Contract]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="039a3cff-3840-8952-60c2-35593d0e1c99">
+      <Execution id="f572db12-fe52-4891-a15f-92ed969a1463" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[17].[Existence of the table].[Table Fakturace_PolozkaZalohoveFakturyVydane]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="18b18861-0e44-b868-8a5f-964d2292f002">
+      <Execution id="253ebaec-bf5d-4c6f-80aa-b33227a14c53" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[47].[Existence of the table].[Table Personalistika_Zamestnanec]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="4717d6b8-16a3-1be3-996f-d263b9ce1288">
+      <Execution id="7c46dc81-a035-419c-86a4-512862b960e5" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[33].[Existence of the table].[Table Ucetnictvi_PolozkaPohledavkovehoDokladu]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="fd5e261c-a769-e37b-93f3-db8fd9795ff2">
+      <Execution id="5a0eb556-3590-4b38-ad35-96fb1d3d7724" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[55].[Existence of the table].[Table LeadToOpportunityTarget]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="a8c716b8-4193-980e-46d0-7cd4ef03d825">
+      <Execution id="e43059a8-ccfa-4e45-95cc-9fe26644e259" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[3].[ST - Not NULL values].[Table [Fact].[Person Capacity]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="b36c18c2-2f16-c4b0-0e40-bd5cc9cf030a">
+      <Execution id="a2e9d099-5500-45dd-b5bc-510b943045f3" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[41].[DQ - Paid more than needed].[Paid more than needed on document]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="e6a75b46-68e3-68c6-0bac-3b5c7b10f84c">
+      <Execution id="9de6b98a-8cf5-4316-92a9-a01ac8324560" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[42].[ST - Revenue Cost Category].[ST - Revenue Cost Category Assigned]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="4c3281ce-958d-c17c-c4db-acdbee707867">
+      <Execution id="c41aea92-481d-41a5-94d5-9ccaa69cec13" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[54].[Existence of the table].[Table TransactionCurrency]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="676e7cea-5aa4-1a91-eaf5-d360655ae92e">
+      <Execution id="7d8ec69d-4232-446a-9e2f-a5372c273cb0" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[13].[Existence of the table].[Table Finance_PolozkaPrikazuKUhrade]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="e98ba9b2-7b11-bcbc-7534-5441c3ffe8f3">
+      <Execution id="d899092b-5145-448f-bec0-f838b42461c0" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[57].[Existence of the table].[Table Revenue Cost Category Specification]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="51d5df11-837d-fbef-2072-1a7a898a69fb">
+      <Execution id="9cfee130-5496-4101-b49a-0d5e2bca6636" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[15].[IT - Sum check by Document Type].[Table [Objednavky_ObjednavkaPrijata]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="7b2537ce-e820-5d98-57b2-e767c22e68d4">
+      <Execution id="6b002172-f677-4f50-bd56-f35d5fedb473" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[23].[Existence of the table].[Table Ciselniky_Cinnost]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="1ec31cfd-6123-0cfe-6ab3-63b40dd1212b">
+      <Execution id="e19747fd-689c-4dbb-b45e-1dac333bcbb1" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[35].[IT - Staging table is a subset of a dimension].[StagingMoney.Objednavky_ObjednavkaPrijata]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="ebaeadec-2162-4787-8a1c-fd15c278512e">
+      <Execution id="8c7edb9c-4117-4e12-bf30-2d92d6c6c84a" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[39].[Existence of the table].[Table Mzdy_Svatky]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="ea30e6cb-f14a-8ba2-3bc0-4a8461781beb">
+      <Execution id="a2cc0265-026e-43bf-8f7f-8990595b8459" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[16].[Existence of the table].[Table Ucetnictvi_Ucet]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="ee6274a6-d68c-445d-a661-6882990db88d">
+      <Execution id="5cd4e1bb-502e-4e79-a7b2-16f324693e02" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[36].[IT - Staging table is a subset of a dimension].[StagingMoney.Adresar_Firma]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="f6a3b2c6-2ece-d171-8a08-a5b7be76bf67">
+      <Execution id="5f126c5f-e64a-4636-b493-6ca5ee7f3c28" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[29].[IT - Staging table is a subset of a dimension].[ StagingMoney.Fakturace_FakturaVydana&#xA;    except]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="804bc72a-f601-f749-749a-fe98c1be182c">
+      <Execution id="0577324b-c856-4367-a9a0-6222d082ffa3" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Integration_StagingxDim&amp;Fact].[4].[ST - Sum of Amount with VAT CZK].[Table [Fact].[Document Item]]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="5279a498-3e54-6a76-5668-7936e4fcdb2e">
+      <Execution id="409678b2-b528-43b9-a2b7-aea47e64acd7" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[52].[Existence of the table].[Table OpportunityHeader]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="0d51d202-9f0e-8e87-796e-4d8c0987e236">
+      <Execution id="9bb42a1b-f529-4cfd-82ce-0c7f91f4f25a" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[22].[Existence of the table].[Table Fakturace_PolozkaFakturyVydane]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="419d32a9-d597-87dc-1eeb-30b5d4b5bb1a">
+      <Execution id="38925615-349b-4f69-ae75-703b21a19cc2" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[12].[Existence of the table].[Table Fakturace_FakturaPrijata]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="c430239a-df21-fddb-6351-0e824ec43dd2">
+      <Execution id="f10413ca-23e8-476b-b026-a3b4a1ba250a" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[43].[Existence of the table].[Table Mzdy_ZamestnanecNepritomnost]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="2842dc64-121e-69f4-e399-0524fee8d051">
+      <Execution id="504226df-3185-4ca0-9316-f4caa3ed3762" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[26].[Existence of the table].[Table Fakturace_PolozkaFakturyPrijate]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="bbe514a8-b32c-84ea-2fe8-555567b7c1aa">
+      <Execution id="028e8bd5-2ce0-4970-834e-d6bb2d378dec" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[41].[Existence of the table].[Table Mzdy_NepritomnostNahrada]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="26ba587d-8d14-5c80-c5e1-65757217c08c">
+      <Execution id="c2398fa2-33d1-4a61-b3c9-27395dc2bd6c" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+    <UnitTest name="[Smoke_ObjectExistence].[19].[Existence of the table].[Table EconomicBase_DruhDokladu]" storage="c:\users\terezačerná\documents\bigbang\testing\jc.unit.runner\jc.unit.dll" id="7cf2e1c7-c3b0-6dde-9ff6-bdc5372fabee">
+      <Execution id="9083ff87-8a08-46a7-9ab3-614528e525e0" />
+      <TestMethod codeBase="C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll" adapterTypeName="executor://nunit3testexecutor/" className="JC.Unit.TestExecution.nUnitRunner" name="RunAllTests" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="6f97390d-f333-7779-747b-5eb57b7fd1d8" executionId="26255f70-2462-488c-914f-ad6a9fa81f52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ec31cfd-6123-0cfe-6ab3-63b40dd1212b" executionId="e19747fd-689c-4dbb-b45e-1dac333bcbb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9475b93-443b-d87f-a61f-8a41fc7ac6f1" executionId="6449fde6-801b-4458-ac1a-debb6445e8a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2399483b-6614-c431-9362-847b6c1e4592" executionId="4001ea28-879b-43d7-a3d2-dfe23d02cd41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6febc6cd-4565-b196-9913-89791c7f65ab" executionId="798f09f7-9626-4db0-a7be-2a28a99cd544" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16df9282-30d4-321f-d81a-c69931a0cf80" executionId="893a113f-81bd-46e0-9f86-2b99f2b84fa0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20f5e4c2-74a8-19b6-8770-cfb85b838a3e" executionId="282faa36-c193-4d04-a106-9736d873ca15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50fafed6-ad95-43c4-24f8-d614d5c94d96" executionId="d5bd0ffb-0d67-4fa1-91dc-3ae45c5eaf99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5279a498-3e54-6a76-5668-7936e4fcdb2e" executionId="409678b2-b528-43b9-a2b7-aea47e64acd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="864b6706-d1c5-e661-a612-b3725dce8068" executionId="05df8d1f-5422-4cb3-8ab4-7f0cc591e364" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f902760-590d-6675-0ade-d6de7c771a6b" executionId="31c99708-4102-48b1-a8c5-c94987bdc012" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d3a32a4-4609-a802-8e5d-72092fb3527d" executionId="dbf90894-4fb1-4d87-b1dc-01f6d78b4201" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87b6bec7-37b1-b032-698d-279ffdadc596" executionId="97fcda14-42ff-4026-a8c6-c8bd4eaca9d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18acec2e-1e7a-3778-00b9-41543d6289fe" executionId="7ddaa018-a650-45cf-8092-6ace8f44cb9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fe7149d-95b6-137a-5c7f-e332393585ef" executionId="feb5ebbc-737f-41a0-ae24-9b86b6f2b2cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="039a3cff-3840-8952-60c2-35593d0e1c99" executionId="f572db12-fe52-4891-a15f-92ed969a1463" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0dce3cbb-c5be-8ce9-26c7-823b70f36b4e" executionId="21d41544-75e9-484d-9498-42b3f16354fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f12a022-e888-a020-9538-58aae455a3ed" executionId="47f8ad9e-4d1e-484f-8bc7-6dbd84f5422a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d4f2eb1-4b6a-f2f9-5631-fba458167b0b" executionId="1674294c-a0fc-4059-8123-3070576cd2f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5362ad2c-828a-7aad-1d15-a999fe6c67ac" executionId="9ae226e6-f856-4c34-9aa2-d523c524f7d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08967945-3295-54c1-32d2-2e73fefe3a5f" executionId="89a12ad1-dcc0-41e3-aa28-b6e1feca908b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26ba587d-8d14-5c80-c5e1-65757217c08c" executionId="c2398fa2-33d1-4a61-b3c9-27395dc2bd6c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c6060242-f5fb-cdf7-fa1d-63bf1a7089d9" executionId="a136e330-f9ce-4993-8249-a3685b1ec703" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b94a13f1-e0d2-a3a1-0150-4599409d2aff" executionId="3c7a32a8-21da-41cb-a2ca-fb10bc906a59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52a5227e-4b35-a770-eb37-5df487124947" executionId="fdf1b9d7-d77d-4467-91e1-5909778c0192" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5564b1f-76b7-9dd4-7b65-c1c566b78c48" executionId="b8b906cf-84ab-4998-acb9-7dc83fff811d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee7b3397-05b3-5660-5f81-c9db969c5159" executionId="9f7475c0-a828-40bb-a16b-048f0215385f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bbe514a8-b32c-84ea-2fe8-555567b7c1aa" executionId="028e8bd5-2ce0-4970-834e-d6bb2d378dec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1cb03d79-ff9b-500d-7915-ae447d9bbf71" executionId="36f9d56a-bcd5-4de1-b97c-ecfb2ce79b4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="378cf331-36e7-aa16-9514-df1f6a19a35c" executionId="c1e37a84-954c-4b65-ba35-980022f16183" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30e9c341-1c1c-069d-a089-d4302828d75b" executionId="58b864db-f1c6-49f7-b5fd-ec09218a1632" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea30e6cb-f14a-8ba2-3bc0-4a8461781beb" executionId="a2cc0265-026e-43bf-8f7f-8990595b8459" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16476183-8a99-9d57-9a05-ab6dceed5fad" executionId="1b445a19-f59f-45f3-82db-7f8bcd511877" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e3c31ea-d47c-7e26-f2f4-ddf1fa7d180e" executionId="356bb31a-0d72-4391-8e30-32b047d4626a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c2f79ab-8644-1b76-edfc-d1d7cfd5cae2" executionId="062a8bf2-b7f7-42f7-993c-ef32b88df231" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="271c685b-4f27-d869-82ad-0a11c3050d03" executionId="ae1ffc8a-5023-438c-9a21-ecb721e6da21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59c40813-1907-f75a-f050-dbaa9195f6db" executionId="452bcb15-87e1-4fd1-91b8-ef3ba812853d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="93a45ca3-7b48-9e02-d63a-86d7e8b5547f" executionId="a623e36b-dbbd-4295-8fa8-576dd95e9ad4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16d5e31b-ede9-d3bc-1f7a-c861155e9c35" executionId="036517bb-c171-4976-8285-752629ffe564" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8dfca29-b254-c754-1cae-f37950e06b2d" executionId="07cb0eaa-f2cb-4121-b5a2-d412a8bc66ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="213ee05a-4a01-4b18-17cf-daa5bcd1646d" executionId="2e7f50dd-f672-45da-be29-017cfa97e8e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4f48ae9-e7e3-a446-ad84-9aae9cef5d7c" executionId="0f31fc3a-8664-443c-93d4-5a0369d8d868" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e595e14-3e8a-3ee8-d68f-c0517b459f44" executionId="de048fde-e156-4ff4-b18d-8397ef1dc960" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e98ba9b2-7b11-bcbc-7534-5441c3ffe8f3" executionId="d899092b-5145-448f-bec0-f838b42461c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ab7735e-377f-01ed-d8c3-0db955cf8049" executionId="4585adbe-e0b6-4907-becf-942f9f7c2a52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebaeadec-2162-4787-8a1c-fd15c278512e" executionId="8c7edb9c-4117-4e12-bf30-2d92d6c6c84a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ef871d9-313f-345e-6695-79d3809a83b3" executionId="d96ec096-1816-4536-9769-e2b3e8079269" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="821e872f-8ad4-4756-a10a-1a9afe75ca93" executionId="84f015e6-d61a-40de-893b-072dd9c32b93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3db5c791-ffce-6a05-5860-fd4dfbc84e5a" executionId="263a55a3-2960-48c8-8b1b-b5ac929ce7dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b36c18c2-2f16-c4b0-0e40-bd5cc9cf030a" executionId="a2e9d099-5500-45dd-b5bc-510b943045f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2842dc64-121e-69f4-e399-0524fee8d051" executionId="504226df-3185-4ca0-9316-f4caa3ed3762" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51d5df11-837d-fbef-2072-1a7a898a69fb" executionId="9cfee130-5496-4101-b49a-0d5e2bca6636" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bbd35e0e-bb7e-d19c-146d-4ca86003d252" executionId="494657ed-20f1-49ff-94ef-e63dc6475675" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4717d6b8-16a3-1be3-996f-d263b9ce1288" executionId="7c46dc81-a035-419c-86a4-512862b960e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="da0038a8-2636-09ae-f494-d1299494c0c0" executionId="4da2c3e1-bc40-4ed4-9a00-c4dcbed83146" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fea8ee86-f243-4070-1133-af94f671b1b8" executionId="a3b1f789-0643-4f90-8975-551cdd961ff0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c3281ce-958d-c17c-c4db-acdbee707867" executionId="c41aea92-481d-41a5-94d5-9ccaa69cec13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6a3b2c6-2ece-d171-8a08-a5b7be76bf67" executionId="5f126c5f-e64a-4636-b493-6ca5ee7f3c28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e58d51f-82e8-9321-f845-d7958f15e29d" executionId="a43a4b3d-6957-4432-b676-88617ccf3c9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b0f98fd-1d63-8013-f76a-ac489a4f9507" executionId="275155d1-f2d8-493a-95ae-fa4bf0fee3c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18b18861-0e44-b868-8a5f-964d2292f002" executionId="253ebaec-bf5d-4c6f-80aa-b33227a14c53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d64c653-9c32-1272-4a79-b9f397aa1294" executionId="e34f743a-a5f2-4f36-9b2c-65f0e1e37cf7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="418d3889-c0f4-fa67-39dd-4c1a403bf7e3" executionId="98e09a6b-cb2d-411e-ba8b-90f88e2e14bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7cf2e1c7-c3b0-6dde-9ff6-bdc5372fabee" executionId="9083ff87-8a08-46a7-9ab3-614528e525e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45d2f5aa-bfed-e5b4-af2a-66055047a3eb" executionId="8faa85b9-71ac-4944-8f53-22e4fabfaa46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20114aae-22cd-37b0-1449-9187519c2520" executionId="b8546141-7d9d-48ce-bb44-6d8e6686cf3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd5e261c-a769-e37b-93f3-db8fd9795ff2" executionId="5a0eb556-3590-4b38-ad35-96fb1d3d7724" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c430239a-df21-fddb-6351-0e824ec43dd2" executionId="f10413ca-23e8-476b-b026-a3b4a1ba250a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="676e7cea-5aa4-1a91-eaf5-d360655ae92e" executionId="7d8ec69d-4232-446a-9e2f-a5372c273cb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e1fb5dc-b2d8-31f3-5b99-a714e28802f3" executionId="6bc2264c-726d-43f9-8cb6-2bc73185c5a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="becefbb3-296f-28e1-a93c-1a14e25a8f3d" executionId="01a2c297-5596-42d1-abd7-e37a3c3f0222" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec69f802-95a3-4b41-2a0c-e181c682aec8" executionId="51088d75-2430-4702-b259-aaa95a1670ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40a17607-ffd3-0727-13e7-309842913b28" executionId="41e81c82-b65d-4df7-9ea1-c4ab0c30efc4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a839709d-1374-8ac0-c102-62728a740644" executionId="94082f01-1a00-4ccb-b977-b5747e44ce01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="804bc72a-f601-f749-749a-fe98c1be182c" executionId="0577324b-c856-4367-a9a0-6222d082ffa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68087df4-ff6a-60f2-a979-00e2356cf9b0" executionId="fc7dc1f5-d1e0-4520-a242-4faf873fb366" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0d51d202-9f0e-8e87-796e-4d8c0987e236" executionId="9bb42a1b-f529-4cfd-82ce-0c7f91f4f25a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7557f51e-c690-f35a-c69e-f1b0099d098d" executionId="598f377f-eea5-4741-b2d2-1dbc9514b0e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74db6c8f-742d-cdd0-fa94-9d1c48485dbf" executionId="24b84d79-82d2-4ded-9346-1b4d0ec9d163" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8297bce6-fe99-c398-4990-1b0593c648e4" executionId="5fc8be7f-6821-41f5-b9d5-c4a2ae02d164" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8c716b8-4193-980e-46d0-7cd4ef03d825" executionId="e43059a8-ccfa-4e45-95cc-9fe26644e259" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="419d32a9-d597-87dc-1eeb-30b5d4b5bb1a" executionId="38925615-349b-4f69-ae75-703b21a19cc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52c3a3ad-7e55-dcc8-9df0-d1a8aea353c2" executionId="55dbbbc1-c6a4-45d2-ba02-e33f5270f5b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6ff8bd4-840e-7b1c-0622-bf6ed6997953" executionId="38dcfb2f-a639-4840-bb41-e2bdbdbbb47c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6a75b46-68e3-68c6-0bac-3b5c7b10f84c" executionId="9de6b98a-8cf5-4316-92a9-a01ac8324560" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82d47166-fa0d-eeb8-402e-c62c6e3b2d5d" executionId="43a03e41-7db1-4263-bb05-ea375a50bbde" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fa48f061-b547-454d-8974-cc937051bb27" executionId="944db5f9-945d-4fed-b736-cc9eb58e2f47" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40bef62d-2799-3cb2-1e58-2af04995aa7b" executionId="962e8df6-6a6b-4845-809b-662114adcd17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30460f3b-eb1a-3117-0195-c89242d95fbf" executionId="5b664c27-c4b6-454d-ab0a-4a7894dbe3e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92e29243-f60c-3207-106a-1d834fb4d7e0" executionId="980505af-4fa6-4f1b-8911-82b988724404" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0e14953-0487-efc3-1455-7bfbfe66d3f5" executionId="c0491415-b0d8-4a5a-82ef-74f0f61af719" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7f1c5d9-3dd4-03b5-631d-00450448e757" executionId="adcc191b-770e-4928-a279-28300071e3ea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee6274a6-d68c-445d-a661-6882990db88d" executionId="5cd4e1bb-502e-4e79-a7b2-16f324693e02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94a1c9bc-6703-5715-60b9-f1ef941637e7" executionId="b84d7027-4940-44f0-956d-e5137742a9ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="883a7dda-e9ee-b281-0325-2730d6a6e7b7" executionId="1637b352-45ae-4a7d-b769-9593d97b5735" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58940f79-27c1-f004-0cda-2c9c955f9a6c" executionId="dd336d49-e336-4938-9187-dddd00eb8b69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef467e50-8cd0-e812-a730-294de2e8ad0f" executionId="4d1fe3e5-61d9-42f2-9a67-db7f81decfd3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="81abb510-fadd-909b-267d-cfb66ab8e4f9" executionId="13b85656-a79d-4352-93b3-b28493a7dcf0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b2537ce-e820-5d98-57b2-e767c22e68d4" executionId="6b002172-f677-4f50-bd56-f35d5fedb473" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b9c9e4ae-229c-0f71-c5aa-98fe7605eaf4" executionId="cf1be0f2-ddda-4941-a15d-1729a7ae3630" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c756a6b5-9822-425b-d05b-10486fe83341" executionId="9b9fb5e5-b6e4-4f0f-8eaa-581ba49c5416" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="657fabb8-afdf-3e81-8619-3b18cd6e2f30" executionId="a8567427-e1a1-4c81-9f7d-c6e8951266a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="102" executed="102" passed="96" failed="6" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.16.0.0: Test execution started&#xD;
+Running selected tests in C:\Users\TerezaČerná\Documents\BigBang\Testing\JC.Unit.Runner\JC.Unit.dll&#xD;
+   NUnit3TestExecutor converted 102 of 102 NUnit test cases&#xD;
+NUnit Adapter 3.16.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
