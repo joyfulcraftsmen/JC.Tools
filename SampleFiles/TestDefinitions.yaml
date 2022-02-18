@@ -1,0 +1,30 @@
+Connection:
+#--------------------------------------------------------------------------------#
+  - 
+    ConnectionName: Info
+    ConnectionType: ExcelOleDB
+    ConnectionString: ..\PersonsInfo.xlsx
+  -
+    ConnectionName: Email
+    ConnectionType: ExcelOleDB
+    ConnectionString: ..\PersonsEmail.xlsx
+#--------------------------------------------------------------------------------#   
+   
+Test:
+#--------------------------------------------------------------------------------#
+  -
+    TestSuite: Test
+    TestName: First Test
+    TestDescription: Compare Names and Emails in 2 Excel files
+    TestQuerySource: Info
+    TestQuery: >
+        SELECT PersonalNumber, Email FROM [Worksheet$]
+    ReferenceQuerySource: Email
+    ReferenceQuery: >
+        SELECT PersonalNumber, Email FROM [List$]
+    TestTypeName: SameData
+#--------------------------------------------------------------------------------#
+
+
+
+
