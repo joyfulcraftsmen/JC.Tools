@@ -19,7 +19,7 @@ If you do not have this tool and would like to use it, email us at testers@joyfu
   
 ![Logo](Images/media/jclogo.png)
 
-[Next chapter](2.0&#32;Prerequisites.md)
+[Next chapter](2.0-Prerequisites.md)
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  
 

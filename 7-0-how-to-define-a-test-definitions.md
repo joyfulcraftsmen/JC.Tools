@@ -39,6 +39,6 @@ examples below.
 
 ![TestDefinitions](Images/media/image34.png)
 
-[Previous chapter](6.2&#32;Where&#32;to&#32;store&#32;Connections.md) --- [Next chapter](7.1&#32;Various&#32;Test&#32;types.md) 
+[Previous chapter](6.2-Where-to-store-Connections.md) --- [Next chapter](7.1-Various-Test-types.md) 
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  

@@ -61,6 +61,6 @@ the table must be \"TestDefinition\".
 > \[Timeout\] INT NULL  
 > );
 
-[Previous chapter](8.0&#32;JC.Unit.Runner.md) 
+[Previous chapter](8.0-JC.Unit.Runner.md) 
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  

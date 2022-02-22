@@ -35,6 +35,6 @@ Therefore, if you have a connection defined in the table in MS SQL database, you
 
 ![SqlServerConnectionDefinitionProvider](Images/media/image31.png)
 
-[Previous chapter](6.1&#32;Various&#32;Connection&#32;types.md) --- [Next chapter](7.0&#32;How&#32;to&#32;define&#32;a&#32;Test&#32;Definitions.md)
+[Previous chapter](6.1-Various-Connection-types.md) --- [Next chapter](7.0-How-to-define-a-Test-Definitions.md)
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  

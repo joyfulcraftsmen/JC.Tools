@@ -156,6 +156,6 @@ The result will look like this:
 
 ![JC.Unit.Runner Result](Images/media/image14.png)
 
-[Previous chapter](2.0&#32;Prerequisites.md) --- [Next chapter](4.0&#32;How&#32;to&#32;run&#32;test-suite.md)
+[Previous chapter](2-0-prerequisites) --- [Next chapter](4-0-how-to-run-test-suite)
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  

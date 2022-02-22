@@ -43,6 +43,6 @@ path to the JC.Unit.dll file.
 
 > dotnet test .\\JC.Unit\\JC.Unit.dll /logger:trx /ResultsDirectory:C:\\Users\\TerezaČerná\\Documents\\Projects\\Testing
 
-[Previous chapter](4.0&#32;How&#32;to&#32;run&#32;test-suite.md)  --- [Next chapter](4.2&#32;How&#32;to&#32;run&#32;test-suite&#32;locally&#32;using&#32;JC.Unit.Runner.md)
+[Previous chapter](4.0-How-to-run-test-suite.md)  --- [Next chapter](4.2-How-to-run-test-suite-locally-using-JC.Unit.Runner.md)
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  

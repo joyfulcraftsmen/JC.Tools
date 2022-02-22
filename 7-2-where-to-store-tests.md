@@ -38,6 +38,6 @@ height="1.65625in"}
 
 ![YamlTestDefinitionProvider](Images/media/image30.png)
 
-[Previous chapter](7.1&#32;Various&#32;Test&#32;types.md) --- [Next chapter](8.0&#32;JC.Unit.Runner.md)
+[Previous chapter](7.1-Various-Test-types.md) --- [Next chapter](8.0-JC.Unit.Runner.md)
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  

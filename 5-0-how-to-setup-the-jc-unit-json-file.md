@@ -88,6 +88,6 @@ As with Connections, the Test requires a Settings field.
 
 ![json](Images/media/image22.png)
 
-[Previous chapter](4.3&#32;How&#32;to&#32;run&#32;test-suite&#32;in&#32;the&#32;pipeline.md)  --- [Next chapter](6.0&#32;How&#32;to&#32;define&#32;a&#32;Connection&#32;Definitions.md) 
+[Previous chapter](4.3-How-to-run-test-suite-in-the-pipeline.md)  --- [Next chapter](6.0-How-to-define-a-Connection-Definitions.md) 
 
-[Back to the List of Contents](0.&#32;List&#32;of&#32;Contents.md)  
+[Back to the List of Contents](0-0-list-of-contents)  
