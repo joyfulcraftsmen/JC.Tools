@@ -30,6 +30,6 @@ The result will look like this:
 
 ![JC.Unit results](Images/media/image14.png)
 
-[Previous chapter](4.1-How-to-run-test-suite-locally-in-Command-line.md) --- [Next chapter](4.3-How-to-run-test-suite-in-the-pipeline.md) 
+[Previous chapter](4-1-how-to-run-test-suite-locally-in-command-line) --- [Next chapter](4-3-how-to-run-test-suite-in-the-pipeline) 
 
 [Back to the List of Contents](0-0-list-of-contents)  
