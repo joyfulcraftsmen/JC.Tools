@@ -33,6 +33,6 @@ queries for easy debugging.
 
 ![JC.Unit Runner](Images/media/image39.png)
 
-[Previous chapter](7.2-Where-to-store-Tests.md) --- [Next chapter](9.0-Tips&Tricks.md)
+[Previous chapter](7-2-where-to-store-tests) --- [Next chapter](9-0-tips-and-tricks)
 
 [Back to the List of Contents](0-0-list-of-contents)  

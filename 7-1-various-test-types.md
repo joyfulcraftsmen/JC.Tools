@@ -38,6 +38,6 @@ no rows.
 
 ![Test types](Images/media/image35.png)
 
-[Previous chapter](7.0-How-to-define-a-Test-Definitions.md) --- [Next chapter](7.2-Where-to-store-Tests.md)
+[Previous chapter](7-0-how-to-define-a-test-definitions) --- [Next chapter](7-2-where-to-store-tests)
 
 [Back to the List of Contents](0-0-list-of-contents)  

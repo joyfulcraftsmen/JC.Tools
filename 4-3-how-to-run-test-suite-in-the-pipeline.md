@@ -30,6 +30,6 @@ as on the picture. These are not default values. Usually you will also
 want to fail the pipeline if tests fail, check \"Fail if there are test
 failures\".
 
-[Previous chapter](4.2-How-to-run-test-suite-locally-using-JC.Unit.Runner.md) --- [Next chapter](5.0-How-to-setup-the-JC.Unit.json-file.md)  
+[Previous chapter](4-2-how-to-run-test-suite-locally-using-jc-unit-runner) --- [Next chapter](5-0-how-to-setup-the-jc-unit-json-file)  
 
 [Back to the List of Contents](0-0-list-of-contents)  

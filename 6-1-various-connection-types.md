@@ -27,6 +27,6 @@ Supported providers for connections:
 | Postgres | Is used for connection to the PostgreSQL database. ConnectionString is a Connection string to the PostgreSQL database. | Host=[Host Name];port=[Port Number];dbname=[Database Name];connect_timeout=10 | Host=localhost;port=5432;dbname=postgres;connect_timeout=10 |
 | Pbix | Is used for connection to the Power BI Desktop datasets. Connection string is a name of the opened Power BI desktop report. Power BI report which you want to test must be opened! | [Name of the opened Power BI file] | My Demo Report |
 
-[Previous chapter](6.0-How-to-define-a-Connection-Definitions.md) --- [Next chapter](6.2-Where-to-store-Connections.md) 
+[Previous chapter](6-0-how-to-define-a-connection-definitions) --- [Next chapter](6-2-where-to-store-connections) 
 
 [Back to the List of Contents](0-0-list-of-contents)  

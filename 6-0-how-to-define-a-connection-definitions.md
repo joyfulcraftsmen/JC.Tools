@@ -46,6 +46,6 @@ Connection Definitions might look like.
 
 ![Connections stored in YAML](Images/media/image26.png)
 
-[Previous chapter](5.0-How-to-setup-the-JC.Unit.json-file.md) --- [Next chapter](6.1-Various-Connection-types.md) 
+[Previous chapter](5-0-how-to-setup-the-jc-unit-json-file) --- [Next chapter](6-1-various-connection-types) 
 
 [Back to the List of Contents](0-0-list-of-contents)  
