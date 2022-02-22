@@ -1,7 +1,7 @@
 # JC.Unit ![Logo](Images/media/logo.png) Documentation - List of Contents 
 
-1.0 [About JC.Unit](1.0&#32;About&#32;JC.Unit.md)  
-2.0 [Prerequisites](2.0&#32;Prerequisites.md)  
+1.0 [About JC.Unit](0-0-list-of-contents)  
+2.0 [Prerequisites](2-0-prerequisites)  
 3.0 [Set your first test](3.0&#32;Set&#32;your&#32;first&#32;test.md)  
 4.0 [How to run test-suite](4.0&#32;How&#32;to&#32;run&#32;test-suite.md)  
 4.1 [How to run test-suite locally in Command line](4.1&#32;How&#32;to&#32;run&#32;test-suite&#32;locally&#32;in&#32;Command&#32;line.md)  
