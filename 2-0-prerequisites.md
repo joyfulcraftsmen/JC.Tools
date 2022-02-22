@@ -21,6 +21,6 @@ In this case it is necessary to install this provider from [this website](https:
 
 ![Provider](Images/media/image2.png)
 
-[Previous chapter](1-0-about-jc-unit) --- [Next chapter](3-0-set-your-first-test) 
+[Previous chapter](1-0-why-to-use-jc-unit) --- [Next chapter](3-0-set-your-first-test) 
 
 [Back to the List of Contents](0-0-list-of-contents)  

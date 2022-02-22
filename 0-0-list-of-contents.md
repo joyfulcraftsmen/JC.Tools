@@ -1,6 +1,8 @@
 # JC.Unit ![Logo](Images/media/logo.png) Documentation - List of Contents 
 
-1.0 [About JC.Unit](1-0-about-jc-unit)  
+> JC.Unit is a framework for testing your data. Using JC.Unit, you'll significantly increase trust into your solutions and into your data.
+
+1.0 [Why to use JC.Unit](1-0-why-to-use-jc-unit)  
 2.0 [Prerequisites](2-0-prerequisites)  
 3.0 [Set your first test](3-0-set-your-first-test)  
 4.0 [How to run test-suite](4-0-how-to-run-test-suite)  
