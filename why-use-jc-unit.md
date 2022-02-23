@@ -1,4 +1,5 @@
-# Why use JC.Unit
+# Why use JC.Unit and when to use it? 
+<!-- https://www.mongodb.com/why-use-mongodb -->
 
 ## Why should I test data?
 
@@ -29,6 +30,14 @@ JC.Unit provides out of the box connectors to major data sources. Relational dat
 * SSAS / Power BI
 
 The number of connectors is growing and they are very easy to add.
+
+<div style="vertical-align: middle; display: flex; align-items: center; flex-wrap: wrap;">
+    <img src="Images/media/sql-server.jpg" style="width: 200px;">
+    <img src="Images/media/oracle-logo.png" style="width: 200px; margin-right: 30px;">
+    <img src="Images/media/postgres.png" style="width: 200px;">
+    <img src="Images/media/ssas.jpg" style="width: 200px;">
+    <img src="Images/media/ms-excel.svg.png" style="width: 80px;">
+</div>
 
 -----------------------
 
