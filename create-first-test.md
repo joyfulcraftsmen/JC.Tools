@@ -1,9 +1,16 @@
-# 3.0 Set your first test
+# Create your first test
 
-This chapter shows you how to run the first test - how to create a
-Connection to the data set, how to write a test and then run it. Because
-this lesson is an introduction to using JC.Unit, it does not use or
+In this chapter, we'll guide you step by step how to create your first simple test.
+You'll learn how to create a connection to your data, how to write a test and how to run it. 
+
+Because this lesson is an introduction to using JC.Unit, it does not use or
 describe many of the options available for this tool.
+
+## Prepare a folder for your test
+
+Create a folder anywhere on your local drive. You will store your test artifacts and results there.
+
+
 
 **Prerequisities**
 

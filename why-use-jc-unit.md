@@ -1,14 +1,14 @@
-# Why to use JC.Unit
+# Why use JC.Unit
 
 ## Why should I test data?
 
 The answer is simple: **You will significantly INCREASE TRUST into your data.**
 
-Do you have data? Do you trust them? Cover them with automated tests, and you will. You will *know* your data are OK, not just *expect* they are. This tool is primarily just about that.
+Do you have data? Do you trust them? Cover them with automated tests, and you will. You will *know* your data are OK, not just *expect* they are. This tool is primarily just about that. Define tests with almost no effort and be sure you can trust your data.
 
 ## What is JC.Unit?
 
-**JC.Unit is a framework for testing data.** It helps you back your data with hundreds or tousands of automated tests in almost no time. 
+**JC.Unit is a framework for testing data.** It helps you back your data with hundreds or tousands of automated tests in no time. 
 
 Whenever you have a need for testing data, JC.Unit is your friend. It is handy for testing e.g.,:
 
