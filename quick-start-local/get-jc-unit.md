@@ -21,7 +21,7 @@ TODO: what version of .NET to use?
 TODO: is *SDK* needed? We don't rely on dotnet test anymore...
 TODO: current screenshot what to download/install
 
-![.NET Core](Images/media/image1.png)
+![.NET Core](/Images/media/image1.png)
 
 
 ### Optional: Microsoft Access Database Engine 2016 Redistributable
@@ -42,7 +42,7 @@ You can get JC.Unit testing framework with just one line in PowerShell. As simpl
 Install-Module JC.Unit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-![Install JC.Unit using PowerShell](./Images/media/powershell-install-jc-unit.jpg)
+![Install JC.Unit using PowerShell](/Images/media/powershell-install-jc-unit.jpg)
 
 If you don't have admin permissions on your machine, you can install the module into your user's scope:
 

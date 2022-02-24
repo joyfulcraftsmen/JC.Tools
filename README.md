@@ -2,18 +2,18 @@
 
 > JC.Unit is a framework for testing your data. Using JC.Unit, you'll significantly increase trust into your solutions and into your data.
 
+[Why use JC.Unit](why-use-jc-unit)
+
 ## Quick start
 
-If you want to try out JC.Unit, follow these tutorials. They take less then xx /*TODO*/ minutes to complete.
-
-### Use JC.unit locally on your computer
+### Use JC.unit locally on your computer (XX /*TODO*/ minutes to complete)
 
 This tutorial is highly recommended, if you want to try out JC.Unit. If you just learned about JC.Unit, start here:
 
-* [Get JC.Unit](get-jc-unit)
-* [Create first test](create-first-test)
+* [Get JC.Unit](quick-start-local/get-jc-unit)
+* [Create first test](quick-start-local/create-first-test)
 
-### Use JC.Unit in an Azure DevOps pipeline
+### Use JC.Unit in an Azure DevOps pipeline (XX /*TODO*/ minutes to complete)
 
 If you want to automate your tests, follow this tutorial:
 
