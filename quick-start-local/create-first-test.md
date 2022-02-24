@@ -10,7 +10,7 @@ describe many of the options available for this tool.
 
 Create a folder anywhere on your local drive. You will store your test artifacts and results there.
 
-![Empty folder for JC.Unit](/Images/media/my-first-tests-empty-folder.jpg)
+![Empty folder for JC.Unit](../Images/media/my-first-tests-empty-folder.jpg)
 
 Now, download two samle files that we prepared for your first test: <a href="SampleFiles/PersonsEmail.xlsx" download>PersonsEmail.xlsx</a> and <a href="SampleFiles/PersonsInfo.xlsx" download>PersonsInfo.xlsx</a>. Place them to the folder you just created. 
 
@@ -24,19 +24,19 @@ Last thing you need in the folder is a file with definition of your connections 
 
 Now, your folder should look something like this:
 
-![Folder with tests](/Images/media/folder-with-tests.jpg)
+![Folder with tests](../Images/media/folder-with-tests.jpg)
 
 ## What will we test
 
 We have two sample MS Excel files. We want to compare two specified columns and check, whether the data are the same in both files:
 
-![What is the test about](/Images/media/what-is-the-test-about.jpg)
+![What is the test about](../Images/media/what-is-the-test-about.jpg)
 
 For this to happen, we need to define somewhere two *connections* (one to PersonsEmail.xlsx and one to PersonsInfo.xlsx) and one *test* (that compares the data in the columns of choice).
 
 Now, examine the content of TestDefinitions.yaml file:
 
-![YAML configuration example](/Images/media/yaml-definition-example.jpg)
+![YAML configuration example](../Images/media/yaml-definition-example.jpg)
 
 Please note how easy it is to add more connections and more tests. The file in this format is easy to read and easy to maintain (but you will be not forced to use YAML format, there's lot of other options where to define connections and tests).
 
@@ -64,7 +64,7 @@ Invoke-JcUnitTest `
 	-WorkingDirectory .
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-![Run JC.Unit tests in PowerShell](/Images/media/run-tests.jpg)
+![Run JC.Unit tests in PowerShell](../Images/media/run-tests.jpg)
 
 What we say here is, that our connections and tests are defined in a YAML file, where the file is, where we want to store test results and working directory. (Working directory is a path against which all relative paths are resolved.)
 
@@ -88,3 +88,6 @@ TODO: bude runner mít switch pro working folder? Nebo budeme chtít vybrat dll?
 
 TODO: ukázat, jak spustit testy v JC.Runneru.
 
+[Previous chapter](/quick-start-local/get-jc-unit)  --- [Next chapter](/quick-start-devops/install-jc-unit-extension) 
+
+[Back to the List of Contents](/index)  
