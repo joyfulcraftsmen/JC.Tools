@@ -2,21 +2,60 @@
 
 > JC.Unit is a framework for testing your data. Using JC.Unit, you'll significantly increase trust into your solutions and into your data.
 
-[Why use JC.Unit](why-use-jc-unit)  
-[Get JC.Unit](get-jc-unit)
+[Why use JC.Unit](why-use-jc-unit)
 
-2.0 [Prerequisites](2-0-prerequisites)  
-3.0 [Set your first test](3-0-set-your-first-test)  
-4.0 [How to run test-suite](4-0-how-to-run-test-suite)  
-4.1 [How to run test-suite locally in Command line](4-1-how-to-run-test-suite-locally-in-command-line)  
-4.2 [How to run test-suite locally in JC.Unit Runner](4-2-how-to-run-test-suite-locally-using-jc-unit-runner)   
-4.3 [How to run test-suite in the pipeline](4-3-how-to-run-test-suite-in-the-pipeline)  
-5.0 [How to set up the JC.Unit.json file](5-0-how-to-setup-the-jc-unit-json-file)  
-6.0 [How to define a Connection Definitions](6-0-how-to-define-a-connection-definitions)  
-6.1 [Various Connection types](6-1-various-connection-types)  
-6.2 [Where to store Connections](6-2-where-to-store-connections)  
-7.0 [How to define a Test Definitions](7-0-how-to-define-a-test-definitions)  
-7.1 [Various Test types](7-1-various-test-types)  
-7.2 [Where to store Tests](7-2-where-to-store-tests)  
-8.0 [JC.Unit.Runner](8-0-jc-unit-runner)  
-9.0 [Tips&Tricks](9-0-tips-and-tricks) 
+## Quick start
+
+### Use JC.unit locally on your computer (XX /*TODO*/ minutes to complete)
+
+This tutorial is highly recommended, if you want to try out JC.Unit. If you just learned about JC.Unit, start here:
+
+* [Get JC.Unit](quick-start-local/get-jc-unit)
+* [Create first test](quick-start-local/create-first-test)
+
+### Use JC.Unit in an Azure DevOps pipeline (XX /*TODO*/ minutes to complete)
+
+If you want to automate your tests, follow this tutorial:
+
+* [Get JC.Unit extension](get-jc-unit-extension)
+* [Create first test](create-first-test)
+* [Create pipeline](create-pipeline)
+* [Run pipeline and examine results](run-pipeline)
+
+## Reference
+
+* Installation
+    * Prerequisites
+    * Installation
+
+* Connection definitions
+    * What is connection definition, structure
+    * Connection providers
+        * YAML (recommended)
+        * MS SQL Server
+        * ORACLE
+        * MS Excel
+        * Excel OLEDB
+
+* Test definitions
+    * What is test definition, structure
+    * Test providers
+        * YAML (recommended)
+        * MS SQL Server
+        * ORACLE
+        * MS Excel
+        * Excel OLEDB
+
+* Test types
+    * Same data
+    * Rowcount
+    * No rows
+
+* JC.Unit PowerShell module
+    * Invoke-JcUnitTest
+    * Show-JcUnitGUI
+
+* JC.Unit Runner
+    * Start JC.Unit Runner
+    * Load tests
+    * Run tests
