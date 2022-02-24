@@ -15,7 +15,9 @@ Test:
   -
     TestSuite: Test
     TestName: First Test
-    TestDescription: Compare Names and Emails in 2 Excel files
+    TestDescription: >
+      Compare combinations of personal numbers 
+      and Emails in 2 Excel files
     TestQuerySource: Info
     TestQuery: >
         SELECT PersonalNumber, Email FROM [Worksheet$]
@@ -24,7 +26,3 @@ Test:
         SELECT PersonalNumber, Email FROM [List$]
     TestTypeName: SameData
 #--------------------------------------------------------------------------------#
-
-
-
-

@@ -1,43 +1,61 @@
-# JC.Unit documentation
+# JC.Unit ![Logo](Images/media/logo.png) Documentation - List of Contents 
 
-Can be found here: 
+> JC.Unit is a framework for testing your data. Using JC.Unit, you'll significantly increase trust into your solutions and into your data.
 
-[JC.Unit documentation](0-0-list-of-contents)
+## Quick start
 
-## Welcome to GitHub Pages
+If you want to try out JC.Unit, follow these tutorials. They take less then xx /*TODO*/ minutes to complete.
 
-You can use the [editor on GitHub](https://github.com/joyfulcraftsmen/JC.Tools/edit/gh-pages-source/README.md) to maintain and preview the content for your website in Markdown files.
+### Use JC.unit locally on your computer
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This tutorial is highly recommended, if you want to try out JC.Unit. If you just learned about JC.Unit, start here:
 
-### Markdown
+* [Get JC.Unit](get-jc-unit)
+* [Create first test](create-first-test)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Use JC.Unit in an Azure DevOps pipeline
 
-```markdown
-Syntax highlighted code block
+If you want to automate your tests, follow this tutorial:
 
-# Header 1
-## Header 2
-### Header 3
+* [Get JC.Unit extension](get-jc-unit-extension)
+* [Create first test](create-first-test)
+* [Create pipeline](create-pipeline)
+* [Run pipeline and examine results](run-pipeline)
 
-- Bulleted
-- List
+## Reference
 
-1. Numbered
-2. List
+* Installation
+    * Prerequisites
+    * Installation
 
-**Bold** and _Italic_ and `Code` text
+* Connection definitions
+    * What is connection definition, structure
+    * Connection providers
+        * YAML (recommended)
+        * MS SQL Server
+        * ORACLE
+        * MS Excel
+        * Excel OLEDB
 
-[Link](url) and ![Image](src)
-```
+* Test definitions
+    * What is test definition, structure
+    * Test providers
+        * YAML (recommended)
+        * MS SQL Server
+        * ORACLE
+        * MS Excel
+        * Excel OLEDB
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+* Test types
+    * Same data
+    * Rowcount
+    * No rows
 
-### Jekyll Themes
+* JC.Unit PowerShell module
+    * Invoke-JcUnitTest
+    * Show-JcUnitGUI
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/joyfulcraftsmen/JC.Tools/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+* JC.Unit Runner
+    * Start JC.Unit Runner
+    * Load tests
+    * Run tests

@@ -19,6 +19,7 @@ TODO: is this needed? What about self-contained executable?
 TODO: what version of .NET to use?
 
 TODO: is *SDK* needed? We don't rely on dotnet test anymore...
+TODO: current screenshot what to download/install
 
 ![.NET Core](Images/media/image1.png)
 
@@ -49,7 +50,7 @@ If you don't have admin permissions on your machine, you can install the module 
 Install-Module JC.Unit -Scope CurrentUser
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-And that's it. Now you have JC.Unit on your machine. Let's create our first test.
+And that's it. Now you have JC.Unit on your machine. Let's create our [first test](create-first-test).
 
 
 
