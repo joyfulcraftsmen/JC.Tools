@@ -41,12 +41,12 @@ The number of connectors is growing and they are very easy to add.
 
 -----------------------
 
-Sounds reasonable? OK, let's [get JC.Unit](/quick-start-local/get-jc-unit) and [setup first test](/quick-start-local//create-first-test).
+Sounds reasonable? OK, let's [get JC.Unit](quick-start-local/get-jc-unit) and [setup first test](quick-start-local/create-first-test).
 
 
 ![Logo](Images/media/jclogo.png)
 
-[Next chapter](/quick-start-local/get-jc-unit)
+[Next chapter](quick-start-local/get-jc-unit)
 
 [Back to the List of Contents](index)  
 
