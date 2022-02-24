@@ -1,7 +1,7 @@
-# Why use JC.Unit and when to use it? 
+# Why Use JC.Unit and When to Use it? 
 <!-- https://www.mongodb.com/why-use-mongodb -->
 
-## Why should I test data?
+## Why Should I Test Data?
 
 The answer is simple: **You will significantly INCREASE TRUST into your data.**
 
@@ -20,7 +20,7 @@ Whenever you have a need for testing data, JC.Unit is your friend. It is handy f
 
 But these are definitelly not the only use cases. Generally, any applications that intensively work with data will benefit from data testing with JC.Unit.
 
-## What data sources are supported?
+## What Data Sources Are Supported?
 JC.Unit provides out of the box connectors to major data sources. Relational databases, MS Excel, analytical models, such as
 
 * MS SQL Server 
@@ -43,10 +43,11 @@ The number of connectors is growing and they are very easy to add.
 
 Sounds reasonable? OK, let's [get JC.Unit](quick-start-local/get-jc-unit) and [setup first test](quick-start-local/create-first-test).
 
+------
 
 ![Logo](Images/media/jclogo.png)
 
-[Next chapter](quick-start-local/get-jc-unit)
+[Next chapter](quick-start-local/intro)
 
 [Back to the List of Contents](index)  
 

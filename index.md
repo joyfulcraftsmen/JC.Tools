@@ -10,6 +10,7 @@
 
 This tutorial is highly recommended, if you want to try out JC.Unit. If you just learned about JC.Unit, start here:
 
+[Introduction](quick-start-local/intro)
 * [Get JC.Unit](quick-start-local/get-jc-unit)
 * [Create first test](quick-start-local/create-first-test)
 
@@ -17,6 +18,7 @@ This tutorial is highly recommended, if you want to try out JC.Unit. If you just
 
 If you want to automate your tests, follow this tutorial:
 
+[Introduction](quick-start-devops/intro)
 * [Get JC.Unit extension](get-jc-unit-extension)
 * [Create first test](create-first-test)
 * [Create pipeline](create-pipeline)

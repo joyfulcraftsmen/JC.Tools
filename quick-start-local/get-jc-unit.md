@@ -52,8 +52,11 @@ Install-Module JC.Unit -Scope CurrentUser
 
 And that's it. Now you have JC.Unit on your machine. Let's create our [first test](create-first-test).
 
+------
 
-[Previous chapter](../why-use-jc-unit)  --- [Next chapter](create-first-test) 
+![Logo](../Images/media/jclogo.png)
+
+[Previous chapter](./intro)  --- [Next chapter](./create-first-test)
 
 [Back to the List of Contents](../index)  
 
