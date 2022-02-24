@@ -48,5 +48,5 @@ Sounds reasonable? OK, let's [get JC.Unit](/quick-start-local/get-jc-unit) and [
 
 [Next chapter](/quick-start-local/get-jc-unit)
 
-[Back to the List of Contents](/index)  
+[Back to the List of Contents](index)  
 

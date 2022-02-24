@@ -53,9 +53,9 @@ Install-Module JC.Unit -Scope CurrentUser
 And that's it. Now you have JC.Unit on your machine. Let's create our [first test](create-first-test).
 
 
-[Previous chapter](/index)  --- [Next chapter](/quick-start-local/create-first-test) 
+[Previous chapter](../index)  --- [Next chapter](create-first-test) 
 
-[Back to the List of Contents](/index)  
+[Back to the List of Contents](../index)  
 
 
 

@@ -88,6 +88,6 @@ TODO: bude runner mít switch pro working folder? Nebo budeme chtít vybrat dll?
 
 TODO: ukázat, jak spustit testy v JC.Runneru.
 
-[Previous chapter](/quick-start-local/get-jc-unit)  --- [Next chapter](/quick-start-devops/install-jc-unit-extension) 
+[Previous chapter](get-jc-unit)  --- [Next chapter](../quick-start-devops/install-jc-unit-extension) 
 
-[Back to the List of Contents](/index)  
+[Back to the List of Contents](../index)  
