@@ -40,54 +40,9 @@ Now, examine the content of TestDefinitions.yaml file:
 
 Please note how easy it is to add more connections and more tests. The file in this format is easy to read and easy to maintain (but you will be not forced to use YAML format, there's lot of other options where to define connections and tests).
 
-## Run the test
+OK, that's it. Your first test is defined, now let's [run it](./run-first-test.md).
 
-OK, all is set up, we can run the test and see, whether the columns contain the same data or not.
 
-You have more options, how to run the tests:
-
-* from PowerShell
-* using GUI, "JC.Unit Runner"
-* in Azure DevOps pipeline
-
-Let's use PowerShell first. You need PowerShell 5 or newer. Run these commands:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Import-Module JC.Unit
-
-Invoke-JcUnitTest `
-	-ConnectionDefinitionsProvider Yaml `
-	-ConnectionDefinitionsSettings .\TestDefinitions.yaml `
-	-TestDefinitionsProvider Yaml `
-	-TestDefinitionsSettings .\TestDefinitions.yaml `
-	-LogFilesFolder '.\Test Results\' `
-	-WorkingDirectory .
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-![Run JC.Unit tests in PowerShell](../Images/media/run-tests.jpg)
-
-What we say here is, that our connections and tests are defined in a YAML file, where the file is, where we want to store test results and working directory. (Working directory is a path against which all relative paths are resolved.)
-
-TODO: this throws error. I'm not admin, the PS module is trying to create JC.Unit.json file under C:\Program Files\WindowsPowerShell\Modules\JC.Unit folder.
-
-TODO: screenshots of results in console window, screenshots of result files
-
-All of this is automation friendly, but there is also GUI for running the tests, JC.Unit Runner. You can start when you run this from PowerShell window:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Show-JcUnitGUI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can also specify the working folder directly (dot for current folder):
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Show-JcUnitGUI -WorkingFolder .
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-TODO: bude runner mít switch pro working folder? Nebo budeme chtít vybrat dll? Jestli bude runner v PowerShellu, může být problém s právama, viz výše.
-
-TODO: ukázat, jak spustit testy v JC.Runneru.
-
-[Previous chapter](get-jc-unit)  --- [Next chapter](../quick-start-devops/install-jc-unit-extension) 
+[Previous chapter](get-jc-unit)  --- [Next chapter](./run-first-test) 
 
 [Back to the List of Contents](../index)  
