@@ -21,7 +21,8 @@ Where to go next? You know have a pretty good idea about how JC.Unit works. So y
 * learn about all [types of tests](../typesoftests) you can perform on your data
 * how to use [JC.Unit in Azure DevOps pipeline](../quick-start-devops/intro).
 
-/*TODO*/ adjust links
+
+<span class="todo">TODO: adjust links</span>
 
 ------
 
