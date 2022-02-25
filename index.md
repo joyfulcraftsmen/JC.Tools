@@ -2,7 +2,7 @@
 
 > JC.Unit is a framework for testing your data. Using JC.Unit, you'll significantly increase trust into your solutions and into your data.
 
-This is a documentation for JC.Unit, it will help you to learn how to use it. If you're wondering what JC.Unit is or why should you use it, please check kour product page firs: [Why use JC.Unit](why-use-jc-unit) <span class="todo">create product page on JC site, point this link there.</span>
+This is a documentation for JC.Unit, it will help you to learn how to use it. If you're wondering what JC.Unit is or why you should use it, please check our product page first: [Why use JC.Unit](why-use-jc-unit) <span class="todo">create product page on JC site, point this link there.</span>
 
 ## Quick Start Tutorials
 
@@ -22,16 +22,19 @@ If you already know basics of JC.Unit, you likely want to automate your tests. I
 
 ## Reference
 
-[Reference](./reference/index)
+Here you find a complete, detailed documentation of every aspect of JC.Unit: [Reference](./reference/index)
 
 ## Support
 
-* Forum: <span class="todo"><a href="#">https://link.to.forum</a></span>
+For both free and paid plan you can use community support in a forum:
 
-* Via email at <a href="mailto:info@joyfulcraftsmen.com">info@joyfulcraftsmen.com</a> <span class="todo">bude email support?</a></p>
+* <span class="todo"><a href="#">https://link.to.forum</a></span>
+
+For paid plan, you can contact us via email. We usualy respond within one or two business days.
+
+* <a href="mailto:info@joyfulcraftsmen.com">info@joyfulcraftsmen.com</a> <span class="todo">what email to use?</span>
             
-* Phone: only for paid support package
-            
+
             
 ## How to Buy
             
