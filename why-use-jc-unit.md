@@ -20,6 +20,12 @@ Whenever you have a need for testing data, JC.Unit is your friend. It is handy f
 
 But these are definitelly not the only use cases. Generally, any applications that intensively work with data will benefit from data testing with JC.Unit.
 
+## Who Uses JC.Unit
+
+We already successsfully use JC.Unit at these companies:
+
+<span class="todo">Can we put logo's here? Skoda, QIC, UNIQA, ...?</span>
+
 ## What Data Sources Are Supported?
 JC.Unit provides out of the box connectors to major data sources. Relational databases, MS Excel, analytical models, such as
 
