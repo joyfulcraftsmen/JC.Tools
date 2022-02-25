@@ -16,11 +16,11 @@ The simplest way to run the tests and explore results is to use a GUI - JC.Unit 
 Show-JcUnitGUI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-/*TODO*/ opravdu takto? nebo z nabídky Start? Když ze start, jak se tam dostane, když JC.Unit bereme z PowerShell Gallery?
+<span class="todo">opravdu takto? nebo z nabídky Start? Když ze start, jak se tam dostane, když JC.Unit bereme z PowerShell Gallery?</span>
 
-/*TODO*/: bude runner mít switch pro working folder? Nebo budeme chtít vybrat dll? Jestli bude runner v PowerShellu, může být problém s právama, viz výše.
+<span class="todo">bude runner mít switch pro working folder? Nebo budeme chtít vybrat dll? Jestli bude runner v PowerShellu, může být problém s právama, viz výše.</span>
 
-/*TODO*/: ukázat, jak spustit testy v JC.Runneru, ukázat výsledky.
+<span class="todo">ukázat, jak spustit testy v JC.Runneru, ukázat výsledky.</span>
 
 
 ## Run the Test Using PowerShell
@@ -50,9 +50,9 @@ What we say here is, that
 
 Working directory is a path against which *all* relative paths are resolved.
 
-TODO: this throws error. I'm not admin, the PS module is trying to create JC.Unit.json file under C:\Program Files\WindowsPowerShell\Modules\JC.Unit folder.
+<span class="todo">this throws error. I'm not admin, the PS module is trying to create JC.Unit.json file under C:\Program Files\WindowsPowerShell\Modules\JC.Unit folder.</span>
 
-TODO: screenshots of results in console window, screenshots of result files
+<span class="todo">screenshots of results in console window, screenshots of result files</span>
 
 
 ------

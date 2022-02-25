@@ -1,6 +1,6 @@
 # Get JC.Unit
 
-Installation of JC.Unit is quick and easy. It'll be up and running in less than <span class="todo">XXX 
+Installation of JC.Unit is quick and easy. It'll be up and running in less than <span class="todo">XX 
 </span> minutes.
 <span class="todo">Add video?</a>
 
@@ -14,12 +14,12 @@ JC.Unit is supported only on Windows. You can run it on Windows 10 or newer and 
 
 You need to install .NET core before we start. Download and install **.NET Core SDK** from [this website](https://dotnet.microsoft.com/download).
 
-TODO: is this needed? What about self-contained executable?
+<span class="todo">TODO: is this needed? What about self-contained executable?</span>
 
-TODO: what version of .NET to use?
+<span class="todo">TODO: what version of .NET to use?</span>
 
-TODO: is *SDK* needed? We don't rely on dotnet test anymore...
-TODO: current screenshot what to download/install
+<span class="todo">TODO: is *SDK* needed? We don't rely on dotnet test anymore...</span>
+<span class="todo">TODO: current screenshot what to download/install</span>
 
 ![.NET Core](../Images/media/image1.png)
 
@@ -31,7 +31,6 @@ If you want to query **MS Excel files**, it is possible you can get \'The
 machine.\' error message.
 
 In this case it is necessary to install this provider from [this website](https://www.microsoft.com/en-us/download/details.aspx?id=54920).
-
 
 
 ## Install JC.Unit with one line of code

@@ -6,14 +6,14 @@
 
 ## Quick start
 
-### Use JC.unit locally on your computer (XX /*TODO*/ minutes to complete)
+### Use JC.unit locally on your computer (<span class="todo">XX</span> minutes to complete)
 
 This tutorial is highly recommended, if you want to try out JC.Unit. If you just learned about JC.Unit, start here:
 
 * [Get JC.Unit](quick-start-local/get-jc-unit)
 * [Create first test](quick-start-local/create-first-test)
 
-### Use JC.Unit in an Azure DevOps pipeline (XX /*TODO*/ minutes to complete)
+### Use JC.Unit in an Azure DevOps pipeline (<span class="todo">XX</span> minutes to complete)
 
 If you want to automate your tests, follow this tutorial:
 
