@@ -1,14 +1,14 @@
 # Get JC.Unit
 
-Installation of JC.Unit is quick and easy. It'll be up and running in less than XXX 
-TODO minutes.
-TODO: video?
+Installation of JC.Unit is quick and easy. It'll be up and running in less than <span class="todo">XXX 
+</span> minutes.
+<span class="todo">Add video?</a>
 
 ## Prerequisites
 
 JC.Unit is supported only on Windows. You can run it on Windows 10 or newer and on Windows Server 2016 or newer. We also provide a task for Azure DevOps.
 
-TODO: link to documentation for Azure DevOps task, info whether we support on-premise Azure DevOps server.
+<span class="todo">Add link to documentation for Azure DevOps task, info whether we support on-premise Azure DevOps server.</span>
 
 ### .NET Core SDK 6
 
