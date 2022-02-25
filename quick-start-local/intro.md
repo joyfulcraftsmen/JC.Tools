@@ -1,6 +1,6 @@
 # Quick start tutorial: Use JC.unit locally on your computer
 
-In quick start this tutorial you will learn how to get JC.Unit, how to create a simple test and how to run it locally on your machine.
+In this tutorial you will learn how to get JC.Unit, how to create a simple test and how to run it locally on your machine.
 
 * [Get JC.Unit](./get-jc-unit)
 * [Create You First JC.Unit Test](./create-first-test)

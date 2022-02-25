@@ -59,7 +59,7 @@ Working directory is a path against which *all* relative paths are resolved.
 
 ![Logo](../Images/media/jclogo.png)
 
-[Previous chapter](./create-first-test)  --- [Next chapter](../quick-start-devops/intro)
+[Previous chapter](./create-first-test)  --- [Next chapter](../quick-start-local/conclusion)
 
 [Back to the List of Contents](../index)  
 

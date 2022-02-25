@@ -2,7 +2,7 @@
 
 Installation of JC.Unit is quick and easy. It'll be up and running in less than <span class="todo">XX 
 </span> minutes.
-<span class="todo">Add video?</a>
+<span class="todo">Add video?</span>
 
 ## Prerequisites
 
