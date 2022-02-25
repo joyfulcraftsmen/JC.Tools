@@ -2,7 +2,7 @@
 
 > JC.Unit is a framework for testing your data. Using JC.Unit, you'll significantly increase trust into your solutions and into your data.
 
-[Why use JC.Unit](why-use-jc-unit)
+This is a documentation for JC.Unit, it will help you to learn how to use it. If you're wondering what JC.Unit is or why should you use it, please check kour product page firs: [Why use JC.Unit](why-use-jc-unit) <span class="todo">create product page on JC site, point this link there.</span>
 
 ## Quick Start Tutorials
 
@@ -22,38 +22,18 @@ If you already know basics of JC.Unit, you likely want to automate your tests. I
 
 ## Reference
 
-* Installation
-    * Prerequisites
-    * Installation
+[Reference](./reference/index)
 
-* Connection definitions
-    * What is connection definition, structure
-    * Connection providers
-        * YAML (recommended)
-        * MS SQL Server
-        * ORACLE
-        * MS Excel
-        * Excel OLEDB
+## Support
 
-* Test definitions
-    * What is test definition, structure
-    * Test providers
-        * YAML (recommended)
-        * MS SQL Server
-        * ORACLE
-        * MS Excel
-        * Excel OLEDB
+* Forum: <span class="todo"><a href="#">https://link.to.forum</a></span>
 
-* Test types
-    * Same data
-    * Rowcount
-    * No rows
+* Via email at <a href="mailto:info@joyfulcraftsmen.com">info@joyfulcraftsmen.com</a> <span class="todo">bude email support?</a></p>
+            
+* Phone: only for paid support package
+            
+            
+## How to Buy
+            
+Contact us at <a href="mailto:sales@joyfulcraftsmen.com?Subject=JC.Unit">sales@joyfulcraftsmen.com</a>
 
-* JC.Unit PowerShell module
-    * Invoke-JcUnitTest
-    * Show-JcUnitGUI
-
-* JC.Unit Runner
-    * Start JC.Unit Runner
-    * Load tests
-    * Run tests
