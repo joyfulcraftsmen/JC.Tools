@@ -6,9 +6,7 @@ Installation of JC.Unit is quick and easy. It'll be up and running in less than 
 
 ## Prerequisites
 
-JC.Unit is supported only on Windows. You can run it on Windows 10 or newer and on Windows Server 2016 or newer. We also provide a task for Azure DevOps.
-
-<span class="todo">Add link to documentation for Azure DevOps task, info whether we support on-premise Azure DevOps server.</span>
+JC.Unit is supported only on Windows. You can run it on Windows 10 or newer and on Windows Server 2016 or newer. (We also provide a task for Azure DevOps pipeline, but this is covered in [this tutorial](../quick-start-devops/intro).)
 
 ### .NET Core SDK 6
 
