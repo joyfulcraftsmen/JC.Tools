@@ -1,7 +1,53 @@
+:root {
+    --color-jc-green: rgb(55, 219, 103);
+    --color-jc-gray: rgb(191, 191, 191);
+    --color-jc-black: rgb(67, 73, 85);
+    --color-jc-font: #676f7c;
+    --color-jc-heading: #434955;
+
+}
+
+body {
+    color: var(--color-jc-font);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--color-jc-heading);
+}
+
+a {
+    color: var(--color-jc-green);
+    text-decoration: none;
+    font-weight: 500;
+}
+
 .todo {
   background-color: yellow;
   color: blue;
   font-weight: 500;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto, 200px;
+    grid-template-rows: 150px auto 150px;
+}
+
+.header {
+    background-color: azure;
+}
+
+.content {
+    background-color: antiquewhite;
+}
+
+.sidebar {
+    background-color: burlywood;
+}
+
+.footer {
+    background-color: var(--color-jc-black);
+    color: white;
 }
