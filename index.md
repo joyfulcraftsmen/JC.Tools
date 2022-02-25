@@ -8,21 +8,17 @@
 
 ### Use JC.unit locally on your computer (<span class="todo">XX</span> minutes to complete)
 
-This tutorial is highly recommended, if you want to try out JC.Unit. If you just learned about JC.Unit, start here:
+This tutorial is highly recommended, if you want to try out JC.Unit. If you just learned about JC.Unit, this is a great starting point - within a few minutes you'll have your first test working. 
 
-[Introduction](quick-start-local/intro)
-* [Get JC.Unit](quick-start-local/get-jc-unit)
-* [Create first test](quick-start-local/create-first-test)
+[Start the Tutorial](./quick-start-local/intro.md)
+
 
 ### Use JC.Unit in an Azure DevOps pipeline (<span class="todo">XX</span> minutes to complete)
 
-If you want to automate your tests, follow this tutorial:
+If you already know basics of JC.Unit, you likely want to automate your tests. In this tutorial you'll learn what to do to be able to use JC.Unit in the context of Azure DevOps build or release pipeline.
 
-[Introduction](quick-start-devops/intro)
-* [Get JC.Unit extension](get-jc-unit-extension)
-* [Create first test](create-first-test)
-* [Create pipeline](create-pipeline)
-* [Run pipeline and examine results](run-pipeline)
+[Start the Tutorial](quick-start-devops/intro)
+
 
 ## Reference
 
