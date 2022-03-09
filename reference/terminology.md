@@ -64,7 +64,7 @@ A *Test* during its run needs to connect to data sources in order to read the da
 
 ## Connection Definition
 
-JC.Unit is a framework focused on testing data. Therefore, it is expected that when you are definign your tests, you certainly wants them to connect to data. The same way you define test, you also define these connections. Because the connection usualy repeat between tests, you provide connection definitions and test definitions separately. Test definitions refere to connection definition by a name.
+JC.Unit is a framework focused on testing data. Therefore, it is expected that when you are defining your tests, you certainly want them to connect to data. The same way you define test, you also define these connections. Because the connection usualy repeat between tests, you provide connection definitions and test definitions separately. Test definitions refere to connection definition by a name.
 
 Example of data, that make up a Connection Definition:
 
