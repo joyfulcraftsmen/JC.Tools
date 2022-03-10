@@ -25,3 +25,8 @@ These are supported *Connection Definition Providers*:
 | [SQL Server](./providers/sql-server) | SqlServer  | reads definitions from MS SQL server table, MS Azure supported
 | [YAML](./providers/yaml)        | Yaml       | reads definitions from a local YAML file
 
+
+
+> You can use different providers for loading connection definitions and for loading test definitions. These are intentionally separated things, because it is surprisingly often handy to have freedom in this.
+
+> All Connection Definition Providers have implemented their Test Definition Providers "counterpart". E.g., you can have both your Connection Definitions and Test Definitions stored in ORACLE database. MS Excel and YAML providers allow you even to store both Connection Definitions and Test Definitions in the very same file, which is handy for development of your data tests.
