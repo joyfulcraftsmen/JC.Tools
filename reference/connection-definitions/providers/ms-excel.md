@@ -1,6 +1,6 @@
 # MS Excel Connection Definition Provider
 
-Using this provider, you can load [Connection Definitions](../what-is-connection-definition) from a MS Excel file:
+Using this [provider](../connection-definition-providers), you can load [Connection Definitions](../what-is-connection-definition) from a MS Excel file:
 
 ![Excel OleDB Connection Definition Provider](../../../Images/media/excel-connection-definitions.jpg)
 
