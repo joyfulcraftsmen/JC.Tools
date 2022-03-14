@@ -20,3 +20,7 @@ The provider intentionally skips all rows, where at least one cell is formatted 
 
 
 This provider does not have any dependencies and works out-of-the-box (compared to [Excel OleDB Connection Definition Provider](./ms-excel-oledb), which requires installation of a driver).
+
+## Permissions
+
+The account JC.Unit runs under must have read permissions on the MS Excel file.

@@ -64,7 +64,7 @@ Test Definition can have more attributes than in the above example. All of them 
 
 ## Related Topics:
 
-* You need to define the Connection Definitions somewhere (in local file or in a database) - see [Test Definition Providers](./test-definition-providers). 
-
+* You need to define the Test Definitions somewhere (in local file or in a database) - see [Test Definition Providers](./test-definition-providers). 
+* Test definitions reference connections they use by name - see [What is Connection Definition](../connection-definitions/what-is-connection-definition) and [Connection Definition Providers](../connection-definitions/connection-definition-providers)
 
 

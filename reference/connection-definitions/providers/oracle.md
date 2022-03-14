@@ -52,7 +52,8 @@ Using this script, you can initialize your ORACLE database, so that it can hold 
 	"TIMEOUT" NUMBER(*,0)
    ) ;
    
-   
+
+-- example rows, feel free to skip these
 INSERT INTO CONNECTIONDEFINITION values ('OXE','Oracle','Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = LOCALHOST)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = xe)));User Id=System;Password=;Persist Security Info=True;');
 
 INSERT INTO TESTDEFINITION values ('Suite',11,'Case','Test Name 2', 'Deeescription', 'OXE', 'SELECT * FROM SYS.DUAL', 'OXE', 'SELECT * FROM SYS.DUAL','SameData','Categorieees',NULL, NULL );
@@ -60,3 +61,7 @@ INSERT INTO TESTDEFINITION values ('Suite',11,'Case','Test Name 2', 'Deeescripti
 COMMIT;
    
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+## Permissions
+
+The account JC.Unit runs under must have read permissions on the CONNECTIONDEFINITION table.

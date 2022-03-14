@@ -67,6 +67,6 @@ END;
 GO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Regarding permissions, the process that runs JC.Unit must have a read permission on the above mentioned table(s).
-When you run JC.Unit locally (using JC.Unit Runner), it runs under your account (unless you start it with "Run as different user"). When you use JC.Unin in Azure DevOps, it runs under the security context of your DevOps agent (MS hosted or self hosted).
+## Permissions
 
+The account JC.Unit runs under must have read permissions on the [Test].[ConnectionDefinition] table.
