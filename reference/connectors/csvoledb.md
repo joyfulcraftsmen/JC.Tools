@@ -1,10 +1,17 @@
 # CsvOleDB Connector
 
+## Prerequisites
+
+To use this connector, you need to install "Microsoft Access Database Engine 2016 Redistributable" driver. See [prerequisites](../installation/prerequisites).
+
+## Description
 This provider allows you to connect to CSV files and issue SQL statements against it's data.
 
-To use it, you have to install a driver. See [prerequisites](../installation/prerequisites).
+> CsvOleDB connector allows basic SQL operations, such as filtering, grouping or sorting. That means you don't need to compare raw CSV data, you can test a result of SQL query issued against the CSV data.
 
-See this example:
+In the connector's connection string, you specify the *folder* where your CSV data are, not the full path to the file. This is not intuitive, but it is handy, as you can define one connection for many CSV files in the same folder.
+
+## Example
 
 ![CSV connector](../../Images/media/csv-vs-excel.jpg)
 
@@ -29,6 +36,4 @@ In the query you need to specify in FROM clause the name of the CSV file. See Re
 This also means you can define just one connection for all CSV files in the same folder.
 
 The example above then uses SameData test type to compare data in the CSV file with the data in the MS Excel file.
-
-> CsvOleDB connector allows basic SQL operations, such as filtering, grouping or sorting. That means you don't need to compare raw CSV data, you can test a result of SQL query issued against the CSV data.
 

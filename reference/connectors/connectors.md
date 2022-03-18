@@ -21,3 +21,5 @@ Just provide a Code from the above table in the ConnectionType filed, when you a
 Similarly, for other [Connection Definition Providers](../connection-definitions/connection-definition-providers), you specify any of the above Code values in ConnectionType column.
 
 In the above example, you tell to JC.Unit to connect to data sources using CsvOleDB provider and ExcelOleDB provider.
+
+The examples for all connectors use YAML in examples. The same fields/properties/columns are expected for other [Connection Definition Providers](../connection-definitions/connection-definition-providers). Just use fields/properties/columns with the same name as in YAML examples.
